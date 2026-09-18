@@ -1,5 +1,6 @@
 import json, os, numpy as np, pandas as pd
-P = os.path.join(os.path.dirname(__file__), "results_b0.jsonl")
+_here = os.path.dirname(os.path.abspath(__file__))
+P = next(p for p in [os.path.join(_here, "..", "results", "results_b0.jsonl"), os.path.join(_here, "results_b0.jsonl")] if os.path.exists(p))
 d = pd.DataFrame([json.loads(l) for l in open(P)]).drop_duplicates(["method", "i"], keep="last")
 rng = np.random.default_rng(0)
 

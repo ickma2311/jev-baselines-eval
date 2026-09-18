@@ -1,0 +1,10 @@
+You are a rigorous, skeptical reviewer (NeurIPS/ICML area chair level) reviewing a PUBLISHED public eval report at report/README.md in this repo. Read report/README.md, prereg/PREREG_B1.md, pilot/PREREG.md, and you may recompute from pilot/results_b0.jsonl and pilot/results_b1.jsonl. Do not modify any files. Be harsh and specific; find errors that would embarrass the author or mislead readers.
+
+Priorities:
+1. FACTUAL / STATISTICAL ERRORS: claims unsupported by the numbers; CI misuse; the pre-registered AMBIGUOUS verdict vs the narrative; the min-over-thresholds statistic R and its bootstrap instability; whether the cross-fit check really addresses threshold-selection optimism; multiple comparisons; whether n=200/208 supports the stated conclusions.
+2. CONFOUNDS: verbalized LLM confidence instead of logprobs (does it invalidate the calibration claim?); prompts not tuned per model; latency measured with Jev serial vs LLMs at concurrency 6 (does that bias the "~2x faster" claim?); B0's rate-limit-induced subsample; single run per item; the supervised encoder trained on the same dataset's train split (fair or apples-to-oranges?).
+3. OVERCLAIMS in the headline and in "What this means in practice".
+4. MISSING baselines/analyses a skeptic would demand first.
+5. What is actually GOOD and should be kept.
+
+Output: numbered findings with severity (blocking/major/minor), each citing the specific line or number; then (a) the 3 most important fixes in order, (b) a verdict: are the headline claims safe to leave public as written, or is an erratum/edit needed?
