@@ -5,12 +5,13 @@ Independent evaluation of [TypeSafe's Jev](https://www.typesafe.ai/) (System One
 
 Not affiliated with TypeSafe. No vendor involvement, no free credits; API costs (~$1 total) paid by the author.
 
-> **Erratum 2026-09-18 (same day, two rounds):** the first published version overstated several results, and
-> my first round of corrections introduced a new error of its own. Two rounds of external review (GPT-6 Astra
+> **Erratum 2026-09-18 (same day, three rounds):** the first published version overstated several results, and
+> my first round of corrections introduced a new error of its own. Three rounds of external review (GPT-6 Astra
 > via the Codex CLI; prompts and outputs in `reviews/`) found problems that I verified and corrected — the
 > calibration language, B0's escalation numbers, an encoder-vs-frontier arithmetic error, the missing cross-fit
 > accuracies, the missing threshold-margin sensitivity that **flips the sign of the headline cascade result**,
-> and then a wrong explanation of *why* it flips. See [Erratum](#erratum) for both rounds.
+> a wrong explanation of *why* it flips, and finally the latency section's framing. See [Erratum](#erratum)
+> for all three rounds.
 
 ## Summary
 
@@ -20,9 +21,11 @@ samples and configurations:
 
 - Jev is a **strong zero-shot classifier**: +7.5pp over `gpt-5.4-nano` on CLINC150 (paired 95% CI [+3.0, +12.5]),
   −4.5pp vs frontier `GPT-5.6 Terra` (CI [+2.0, +7.5] in Terra's favor).
-- Jev's **per-call latency is ~2.2x lower than a nano-class LLM** run serially on the same 30 items (median
-  0.42s vs 0.92s) — not the 40–200x the vendor's own comparisons suggest. Throughput is a separate story, and
-  under rate limiting it is much worse than per-call latency (see [Latency](#latency-how-it-was-measured-and-what-biases-remain)).
+- **Recorded median call duration was ~2.2x shorter for the Jev configuration** than for the nano configuration
+  on the same 30 items (0.42s vs 0.92s) — not the 40–200x the vendor's comparisons suggest. This compares the
+  tested client-and-service configurations, not isolated model inference speed, and it is specific to these
+  providers, this location and this load; throughput under rate limiting is far worse than per-call latency.
+  See [Call duration](#call-duration-what-was-measured-and-what-it-does-not-show).
 - **Where labeled data exists, a 9ms supervised encoder wins**: +5.8pp over the frontier model on Banking77
   (paired CI [+2.4, +9.6]), at no per-call cost, on a laptop.
 - Jev's confidence **did not rank its own errors better** than an LLM's verbalized confidence on CLINC150
@@ -133,41 +136,72 @@ benefit-ranking controls that would be needed to claim causation. It stays a hyp
   Google Pay top-up under `apple_pay_or_google_pay`, not `top_up_failed`), which may be ambiguous from label
   names alone. I did not measure how much of the gap this accounts for, and did not test whether richer label
   descriptions would close it.
-- **If you have no labeled data**, Jev is a reasonable zero-shot router on these tasks: +7.5pp accuracy and
-  ~2x lower per-call latency than the nano LLM tested, and better at `oos` (exploratory).
+- **If you have no labeled data**, Jev is a reasonable zero-shot router on these tasks: +7.5pp accuracy over
+  the nano LLM tested and roughly half the recorded call duration *in these two configurations* (not a
+  provider-independent speed claim), plus better `oos` handling (exploratory).
 - **Do not assume Jev's confidence is a better escalation signal than an LLM's** — that is what this report
   tested and failed to establish, in both directions.
 - **The vendor's 40–200x speed claim does not describe this comparison**: 0.43s vs 0.92s serial. TypeSafe's
   figures come from its own workflow evaluation against frontier models, not nano-class models; I did not
   reproduce the vendor's conditions.
 
-## Latency: how it was measured, and what biases remain
+## Call duration: what was measured, and what it does not show
 
-Wall-clock per successful API call, from one machine (US west coast), including network time. Not a
-datacenter-local measurement, so absolute numbers are site-specific; the *ratio* is the point.
+Every latency number here is **wall-clock duration of one API call** measured in the client: a timestamp before
+the request, another after the full response body is read
+([`code/run_b1.py:32`](code/run_b1.py), [`code/common.py:50`](code/common.py)). Non-streaming on both sides, so
+these are completion times, not time-to-first-token.
 
-The published B1 LLM numbers were collected at concurrency 6 while Jev ran serially, which is an unequal
-serving configuration. I re-measured nano and Terra **serially on the same 30 items**
-(`results/latency_serial.json`, `code/latency_serial.py`):
+**What this legitimately supports:** on the same 30 CLINC150 items, in separate serial runs, the recorded median
+call duration was **0.423 s for Jev through Vercel (raw urllib)** and **0.924 s for nano through Lightning
+(litai SDK)** — a **2.18x ratio of medians**. That is a comparison of two client-and-service configurations as
+tested. It is **not** a measurement of model inference speed, and it does not transfer to other providers,
+regions, load levels or workloads.
 
-| | serial (n=30) | concurrency 6 (n=200) |
-|---|---|---|
-| nano median | 0.92 s | 0.88 s |
-| Terra median | 1.33 s | 1.20 s |
+Three follow-up measurements narrow down where the time goes:
 
-The two columns are different item counts measured at different times, so this is descriptive evidence that
-concurrency 6 did not materially inflate the LLM medians — not an isolated estimate of a concurrency effect.
-On the **same 30 items**, Jev's median is 0.42 s against nano's 0.92 s serial, i.e. **2.2x**. The remaining
-caveats:
+**1. Network is a minor but non-trivial share.** `curl` against both hosts: DNS+TCP+TLS handshake 47–65 ms
+(Vercel) and 49–86 ms (Lightning), post-connection RTT ~20–40 ms. Handshake alone is ~11–15% of Jev's 423 ms,
+so "network is negligible" would be too strong — but the two paths are similar, so external connection setup
+does not explain a ~500 ms gap. This probe only sees the client-facing hop, not gateway-to-backend transit.
 
-- **Per-call latency ≠ throughput.** Jev on the Vercel free tier is rate-limited to roughly 1 request/minute
-  after a burst: 45 of 200 B1 items needed retries (38 of them 11 attempts), and the 200-item run took ~3.5
-  hours of wall clock. Recorded latency is the successful attempt only and **excludes backoff waits**. A
-  rate-limited deployment sees the queue, not the 0.43s.
-- One scored run per item, and no systematic repeated-run latency study (the 30 serial LLM calls are a second
-  pass for timing only); no determinism measurement (see 4esv/jev-eval for that).
-- Different providers (Vercel gateway for Jev, Lightning for LLMs) means different network paths, not just
-  different models.
+**2. Client-side overhead is not the explanation.** Instrumenting urllib3 under litai for 12 real
+classification calls ([`code/latency_instrument.py`](code/latency_instrument.py),
+[`results/latency_instrument.json`](results/latency_instrument.json)): median outer `chat()` 1.007 s vs median
+HTTP span 1.006 s, **client overhead 0.000 s, exactly 1 HTTP request per call, no internal retries** (the SDK's
+one-time initialization cost, 2.55 s, lands on a warm-up call that is excluded). So the gap is remote-path time,
+not SDK bookkeeping.
+
+**3. Payload size barely moves Jev; token generation moves nano.**
+([`code/latency_breakdown.py`](code/latency_breakdown.py), [`results/latency_breakdown.json`](results/latency_breakdown.json))
+
+| request | n | median | IQR |
+|---|---|---|---|
+| Jev, 1 boolean question (~5 input tokens) | 6 | 0.448 s | 0.35–0.51 |
+| Jev, 151-label choice (~3,000 input tokens) | 8 | 0.432 s | 0.37–0.55 |
+| nano, "reply ok" (1 output token) | 10 | 0.699 s | 0.64–1.05 |
+| nano, 151-label classification (~30 output tokens) | 10 | 0.908 s | 0.77–1.04 |
+
+Jev's duration is flat across a ~600x change in input size, i.e. its path has a floor around 0.43 s that the
+work barely perturbs. nano's duration rises ~0.21 s when it has to emit ~30 tokens instead of 1 — consistent
+with token generation being a real cost of the generative approach, which is exactly what Jev's design claims
+to avoid. **Caveat: these probes change task type along with size** (boolean vs 151-way choice, 1 vs 30 output
+tokens), so they do not isolate input length, and n is 6–10. Read them as narrowing, not decomposing: of the
+~0.5 s gap, roughly 0.2 s tracks nano's token generation and the rest is unexplained difference in path floors.
+
+**Throughput is a different number entirely.** Jev on the Vercel free tier is rate-limited to roughly
+1 request/minute after a burst: 45 of 200 B1 items needed retries (38 of them 11 attempts), and the 200-item run
+took ~3.5 hours of wall clock. Recorded latency is the successful attempt only and **excludes backoff waits**.
+Do not size capacity from 0.43 s.
+
+**The control that would settle it, and that I did not run:** call Jev and an LLM through the **same gateway
+from the same client** — Cloudflare's AI Gateway serves both (`typesafe/jev` plus LLM endpoints) — so path
+overhead is shared and the remaining difference is attributable to the models. Until someone does that, treat
+every ratio here as a statement about serving paths, not about models.
+
+Other caveats: one scored run per item; no systematic repeated-run latency study (the 30 serial LLM calls and
+the probes above are timing-only second passes); no determinism measurement (see 4esv/jev-eval for that);
+absolute numbers are specific to a US-west-coast client.
 
 ## Methods
 
@@ -213,7 +247,9 @@ caveats:
   latency. That remains the open question.
 - Jev is in early access and versioned; these numbers describe 2026-09-18 behavior through Vercel's gateway.
 - No calibration measurement (reliability diagrams / ECE), no random-routing control, no learning curve for the
-  supervised baseline, no per-model prompt tuning, one run per item.
+  supervised baseline, no per-model prompt tuning, one scored run per item.
+- **No same-gateway latency control**, so no latency claim here is attributable to the models rather than to
+  the serving paths (see Call duration).
 
 ## Reproducing
 
@@ -250,12 +286,38 @@ Every number in the tables is recomputable from `results/*.jsonl` and `results/l
 
 ## Review
 
-`reviews/` contains the external critical review this report was revised against (GPT-6 Astra via the Codex
-CLI, reading this repo), plus a second review of the pre-revision README by the same model family through a
-different provider. I verified each quantitative finding independently before correcting; the verification is
-reproducible from `results/*.jsonl`.
+`reviews/` contains the three external critical reviews this report was revised against, with the prompts used:
+a full review of the first published version, a second round that verified those fixes and caught the new error
+I had introduced, and a targeted third round on the latency section. All by GPT-6 Astra through the Codex CLI
+reading this repo (plus one run of the first review through a different provider). I verified every quantitative
+finding independently before correcting anything; the verification is reproducible from `results/`.
 
 ## Erratum
+
+### Round 1
+
+What the first published version got wrong:
+
+1. **Headline cascade framing.** "At equal accuracy … roughly half as much traffic" was based only on the 1pp
+   margin. At exact parity Jev's R = 1.000 vs nano's 0.730 — **the sign flips** — because Jev returns
+   confidence 1.0 on 102/200 items including 6 errors. Margin sensitivity is now in the table.
+2. **Calibration language.** "Not better calibrated" / "was worse" claimed something AUROC does not measure,
+   and the paired interval includes zero. Now stated as error ranking with the interval, in both directions.
+3. **Mechanism claim.** "The savings come from higher standalone accuracy" and "post-hoc noise" were presented
+   as conclusions; they are hypotheses, and the needed controls were not run.
+4. **B0 escalation rates mixed criteria** (0.255 was exact-parity on a coarse grid). Under B1's rule the B0
+   numbers are Jev 0.130 / nano 0.442; the B0 cascade rows were removed from the main table in favor of B1's.
+5. **"Encoder beat the frontier LLM by 8pp"** mixed samples: it is +5.8pp on the paired 208, +7.7pp on the
+   full 300.
+6. **Cross-fit check** was cited as reassurance without its achieved accuracies (0.900 / 0.895, both below the
+   0.905 target).
+7. **Cost claim** ("a fraction of the cost") implied measurement; LLM costs were never recorded, and the
+   "every number is recomputable" claim was too broad.
+8. **B0 missingness** was called content-independent without showing the retained/omitted difference
+   (Terra 0.875 vs 0.804), and B0's own AMBIGUOUS verdict was not stated.
+9. **"Differences under ~5pp are noise"** was replaced with actual paired intervals.
+10. **"Structured output"** for the LLM path was wrong (JSON-prompted, regex-parsed), and the published
+    reproduction commands did not work against the published layout. Both fixed.
 
 ### Round 2 (after re-reviewing the corrected version)
 
@@ -289,30 +351,23 @@ retained-208 selection cannot be audited beyond the retained/omitted comparison 
 mutable branches rather than pinned revisions; the pre-registration hash proves content integrity, not that the
 document predates the model calls.
 
-### Round 1
+### Round 3 (latency, after a targeted review of that section alone)
 
-What the first published version got wrong:
-
-1. **Headline cascade framing.** "At equal accuracy … roughly half as much traffic" was based only on the 1pp
-   margin. At exact parity Jev's R = 1.000 vs nano's 0.730 — **the sign flips** — because Jev returns
-   confidence 1.0 on 102/200 items including 6 errors. Margin sensitivity is now in the table.
-2. **Calibration language.** "Not better calibrated" / "was worse" claimed something AUROC does not measure,
-   and the paired interval includes zero. Now stated as error ranking with the interval, in both directions.
-3. **Mechanism claim.** "The savings come from higher standalone accuracy" and "post-hoc noise" were presented
-   as conclusions; they are hypotheses, and the needed controls were not run.
-4. **B0 escalation rates mixed criteria** (0.255 was exact-parity on a coarse grid). Under B1's rule the B0
-   numbers are Jev 0.130 / nano 0.442; the B0 cascade rows were removed from the main table in favor of B1's.
-5. **"Encoder beat the frontier LLM by 8pp"** mixed samples: it is +5.8pp on the paired 208, +7.7pp on the
-   full 300.
-6. **Cross-fit check** was cited as reassurance without its achieved accuracies (0.900 / 0.895, both below the
-   0.905 target).
-7. **Cost claim** ("a fraction of the cost") implied measurement; LLM costs were never recorded, and the
-   "every number is recomputable" claim was too broad.
-8. **B0 missingness** was called content-independent without showing the retained/omitted difference
-   (Terra 0.875 vs 0.804), and B0's own AMBIGUOUS verdict was not stated.
-9. **"Differences under ~5pp are noise"** was replaced with actual paired intervals.
-10. **"Structured output"** for the LLM path was wrong (JSON-prompted, regex-parsed), and the published
-    reproduction commands did not work against the published layout. Both fixed.
+17. **The latency section claimed more than the measurement supports.** It is now "recorded median call duration
+    of two client-and-service configurations", not a model-speed comparison, and the configuration caveat is in
+    the Summary and the practical takeaway rather than only in the limitations. The line "the ratio is the point"
+    is gone — the ratio is also configuration-specific.
+18. **"Network is <10%" was too strong.** Handshake alone is ~11–15% of Jev's 423 ms. Corrected, with the probe's
+    own limitation (it only sees the client-facing hop) stated.
+19. **A confound I had not ruled out is now tested and ruled out:** Jev was timed through raw urllib and the LLMs
+    through the litai SDK. Instrumenting urllib3 shows 0.000 s client overhead and exactly one HTTP request per
+    call, with SDK initialization isolated to an excluded warm-up call.
+20. **The payload-size probe was corrected by more data.** At n=3 the minimal requests looked *slower*, which I
+    had read as "overhead dominates"; at n=6–10 Jev is flat (0.448 vs 0.432 s) and nano rises with output length
+    (0.699 → 0.908 s). The probe still conflates payload size with task type, which is now stated.
+21. **Added the missing control:** a same-gateway comparison (Cloudflare serves both Jev and LLMs) is named as
+    the experiment that would make any latency claim model-attributable, and its absence is listed as a
+    limitation.
 
 ## License
 

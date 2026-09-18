@@ -1,0 +1,22 @@
+Narrow follow-up question about the public eval report in this repo (report/README.md). Read the current README's Latency section, report/results/latency_serial.json, and report/code/latency_serial.py. Do not modify files.
+
+New measurements taken after the last review round (a larger-sample run is still in flight; these are medians of n=3 unless noted):
+
+A) Pure network cost, curl, 3 reps each:
+   - Vercel gateway (Jev path): DNS+TCP+TLS handshake 47-65 ms; post-connection RTT ~20-40 ms.
+   - Lightning (LLM path): handshake 49-86 ms.
+   So network is <10% of either model's per-call time, and is nearly identical for the two paths.
+
+B) Payload-size sensitivity, same provider, same client:
+   - Jev minimal request (1 boolean question, ~5 input tokens): median 0.644 s
+   - Jev real request (151 labels, ~3000 input tokens):        median 0.423 s
+   - nano minimal ("Reply with exactly: ok", 1 output token):   median 1.193 s
+   - nano real (151 labels, ~30 output tokens):                 median 1.039 s
+   i.e. a ~600x change in input size produced no increase in latency; minimal requests were, if anything, slower.
+
+The author's concern: if latency is dominated by per-call fixed overhead of the serving path (gateway routing, scheduling, model minimum response time) rather than by model computation, then the report's "~2.2x lower per-call latency than nano" may be measuring the providers, not the models. The options on the table are (1) delete the latency comparison from the report, or (2) keep it with a much more explicit framing of what it does and does not measure.
+
+Answer three things concretely:
+1. Given (A) and (B), what does the ~2.2x number legitimately support, and what claims must be dropped? Be precise about the inference: does payload-independence imply per-call overhead dominates, or are there other explanations (e.g. batching, warm/cold routing, token-generation floor, client-side overhead in litai vs raw urllib)?
+2. Delete or reframe? Argue for one. If reframe, give the specific claim wording you would accept, and say what additional cheap measurement (if any) is required before the claim can stay public.
+3. Is there a confound between the two paths I have not accounted for, e.g. Jev measured with raw urllib and the LLMs measured through the litai client (client-side overhead), or non-streaming vs streaming? Tell me how to test the biggest one cheaply.
