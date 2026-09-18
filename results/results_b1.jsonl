@@ -1,0 +1,600 @@
+{"pred": "flip_coin", "conf": 0.93, "latency": 3.071945905685425, "raw": "{\"label\":\"flip_coin\",\"confidence\":0.93}", "method": "nano", "i": 2, "gold": "flip_coin", "correct": true}
+{"pred": "rewards_balance", "conf": 0.78, "latency": 3.1163201332092285, "raw": "{\"label\":\"rewards_balance\",\"confidence\":0.78}", "method": "nano", "i": 0, "gold": "rewards_balance", "correct": true}
+{"pred": "expiration_date", "conf": 0.9, "latency": 3.16786527633667, "raw": "{\"label\":\"expiration_date\",\"confidence\":0.9}", "method": "nano", "i": 5, "gold": "expiration_date", "correct": true}
+{"pred": "reminder", "conf": 0.9, "latency": 3.436448097229004, "raw": "{\"label\":\"reminder\",\"confidence\":0.9}", "method": "nano", "i": 3, "gold": "reminder_update", "correct": false}
+{"pred": "timezone", "conf": 0.95, "latency": 3.5901708602905273, "raw": "{\"label\":\"timezone\",\"confidence\":0.95}", "method": "nano", "i": 4, "gold": "timezone", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 3.6657469272613525, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 1, "gold": "oos", "correct": true}
+{"pred": "interest_rate", "conf": 0.86, "latency": 0.8637070655822754, "raw": "{\"label\":\"interest_rate\",\"confidence\":0.86}", "method": "nano", "i": 6, "gold": "interest_rate", "correct": true}
+{"pred": "rewards_balance", "conf": 1, "latency": 0.4208667278289795, "cost": 0.000105882, "method": "jev", "i": 0, "gold": "rewards_balance", "correct": true, "attempts": 3}
+{"pred": "text", "conf": 0.38, "latency": 1.041693925857544, "raw": "{\"label\":\"text\",\"confidence\":0.38}", "method": "nano", "i": 8, "gold": "oos", "correct": false}
+{"pred": "bill_due", "conf": 0.72, "latency": 1.1084492206573486, "raw": "{\"label\":\"bill_due\",\"confidence\":0.72}", "method": "nano", "i": 7, "gold": "bill_balance", "correct": false}
+{"pred": "report_fraud", "conf": 0.9, "latency": 0.8248691558837891, "raw": "{\"label\":\"report_fraud\",\"confidence\":0.9}", "method": "nano", "i": 9, "gold": "report_fraud", "correct": true}
+{"pred": "uber", "conf": 0.9, "latency": 0.6938900947570801, "raw": "{\"label\":\"uber\",\"confidence\":0.9}", "method": "nano", "i": 10, "gold": "uber", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 0.3434891700744629, "cost": 0.000105714, "method": "jev", "i": 1, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "balance", "conf": 0.9, "latency": 0.7282402515411377, "raw": "{\"label\":\"balance\",\"confidence\":0.9}", "method": "nano", "i": 11, "gold": "balance", "correct": true}
+{"pred": "are_you_a_bot", "conf": 0.95, "latency": 0.6644620895385742, "raw": "{\"label\":\"are_you_a_bot\",\"confidence\":0.95}", "method": "nano", "i": 12, "gold": "are_you_a_bot", "correct": true}
+{"pred": "flip_coin", "conf": 1, "latency": 0.34752607345581055, "cost": 0.000105672, "method": "jev", "i": 2, "gold": "flip_coin", "correct": true, "attempts": 1}
+{"pred": "book_hotel", "conf": 0.97, "latency": 0.7190141677856445, "raw": "{\"label\":\"book_hotel\",\"confidence\":0.97}", "method": "nano", "i": 14, "gold": "book_hotel", "correct": true}
+{"pred": "travel_alert", "conf": 0.93, "latency": 0.749016284942627, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.93}", "method": "nano", "i": 13, "gold": "travel_alert", "correct": true}
+{"pred": "greeting", "conf": 0.83, "latency": 0.7113680839538574, "raw": "{\"label\":\"greeting\",\"confidence\":0.83}", "method": "nano", "i": 15, "gold": "greeting", "correct": true}
+{"pred": "translate", "conf": 0.9, "latency": 0.7201728820800781, "raw": "{\"label\":\"translate\",\"confidence\":0.9}", "method": "nano", "i": 17, "gold": "translate", "correct": true}
+{"pred": "reminder", "conf": 1, "latency": 0.4499337673187256, "cost": 0.000105798, "method": "jev", "i": 3, "gold": "reminder_update", "correct": false, "attempts": 1}
+{"pred": "oos", "conf": 0.86, "latency": 0.9052450656890869, "raw": "{\"label\":\"oos\",\"confidence\":0.86}", "method": "nano", "i": 16, "gold": "oos", "correct": true}
+{"pred": "direct_deposit", "conf": 0.9, "latency": 0.7330589294433594, "raw": "{\"label\":\"direct_deposit\",\"confidence\":0.9}", "method": "nano", "i": 18, "gold": "direct_deposit", "correct": true}
+{"pred": "timezone", "conf": 1, "latency": 0.4985678195953369, "cost": 0.000105672, "method": "jev", "i": 4, "gold": "timezone", "correct": true, "attempts": 1}
+{"pred": "schedule_maintenance", "conf": 0.74, "latency": 0.9140658378601074, "raw": "{\"label\":\"schedule_maintenance\",\"confidence\":0.74}", "method": "nano", "i": 20, "gold": "schedule_maintenance", "correct": true}
+{"pred": "make_call", "conf": 0.92, "latency": 0.9714908599853516, "raw": "{\"label\":\"make_call\",\"confidence\":0.92}", "method": "nano", "i": 19, "gold": "make_call", "correct": true}
+{"pred": "tire_change", "conf": 0.9, "latency": 0.7298738956451416, "raw": "{\"label\":\"tire_change\",\"confidence\":0.9}", "method": "nano", "i": 23, "gold": "tire_change", "correct": true}
+{"pred": "fun_fact", "conf": 0.53, "latency": 1.0172390937805176, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.53}", "method": "nano", "i": 21, "gold": "oos", "correct": false}
+{"pred": "freeze_account", "conf": 0.94, "latency": 1.2023298740386963, "raw": "{\"label\":\"freeze_account\",\"confidence\":0.94}", "method": "nano", "i": 22, "gold": "freeze_account", "correct": true}
+{"pred": "pto_request", "conf": 0.74, "latency": 1.0402591228485107, "raw": "{\"label\":\"pto_request\",\"confidence\":0.74}", "method": "nano", "i": 24, "gold": "pto_request", "correct": true}
+{"pred": "find_phone", "conf": 0.98, "latency": 0.6852972507476807, "raw": "{\"label\":\"find_phone\",\"confidence\":0.98}", "method": "nano", "i": 25, "gold": "find_phone", "correct": true}
+{"pred": "find_phone", "conf": 0.93, "latency": 0.6831991672515869, "raw": "{\"label\":\"find_phone\",\"confidence\":0.93}", "method": "nano", "i": 26, "gold": "find_phone", "correct": true}
+{"pred": "traffic", "conf": 0.9, "latency": 0.8863191604614258, "raw": "{\"label\":\"traffic\",\"confidence\":0.9}", "method": "nano", "i": 28, "gold": "traffic", "correct": true}
+{"pred": "directions", "conf": 0.74, "latency": 1.0494790077209473, "raw": "{\"label\":\"directions\",\"confidence\":0.74}", "method": "nano", "i": 27, "gold": "oos", "correct": false}
+{"pred": "measurement_conversion", "conf": 0.99, "latency": 0.7045750617980957, "raw": "{\"label\":\"measurement_conversion\",\"confidence\":0.99}", "method": "nano", "i": 30, "gold": "measurement_conversion", "correct": true}
+{"pred": "timer", "conf": 0.93, "latency": 0.8299500942230225, "raw": "{\"label\":\"timer\",\"confidence\":0.93}", "method": "nano", "i": 29, "gold": "timer", "correct": true}
+{"pred": "date", "conf": 0.78, "latency": 0.6479580402374268, "raw": "{\"label\":\"date\",\"confidence\":0.78}", "method": "nano", "i": 31, "gold": "date", "correct": true}
+{"pred": "pto_balance", "conf": 0.98, "latency": 0.8564538955688477, "raw": "{\"label\":\"pto_balance\",\"confidence\":0.98}", "method": "nano", "i": 32, "gold": "pto_balance", "correct": true}
+{"pred": "recipe", "conf": 0.66, "latency": 0.665956974029541, "raw": "{\"label\":\"recipe\",\"confidence\":0.66}", "method": "nano", "i": 34, "gold": "recipe", "correct": true}
+{"pred": "travel_alert", "conf": 0.78, "latency": 0.815418004989624, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.78}", "method": "nano", "i": 33, "gold": "travel_alert", "correct": true}
+{"pred": "carry_on", "conf": 0.9, "latency": 0.8009750843048096, "raw": "{\"label\":\"carry_on\",\"confidence\":0.9}", "method": "nano", "i": 35, "gold": "carry_on", "correct": true}
+{"pred": "reset_settings", "conf": 0.74, "latency": 0.9688239097595215, "raw": "{\"label\":\"reset_settings\",\"confidence\":0.74}", "method": "nano", "i": 36, "gold": "reset_settings", "correct": true}
+{"pred": "application_status", "conf": 0.25, "latency": 0.7028651237487793, "raw": "{\"label\":\"application_status\",\"confidence\":0.25}", "method": "nano", "i": 38, "gold": "oos", "correct": false}
+{"pred": "expiration_date", "conf": 0.9, "latency": 1.0562207698822021, "raw": "{\"label\":\"expiration_date\",\"confidence\":0.9}", "method": "nano", "i": 37, "gold": "expiration_date", "correct": true}
+{"pred": "travel_notification", "conf": 0.88, "latency": 1.020188331604004, "raw": "{\"label\":\"travel_notification\",\"confidence\":0.88}", "method": "nano", "i": 39, "gold": "travel_notification", "correct": true}
+{"pred": "order_status", "conf": 0.9, "latency": 0.9946188926696777, "raw": "{\"label\":\"order_status\",\"confidence\":0.9}", "method": "nano", "i": 40, "gold": "order_status", "correct": true}
+{"pred": "date", "conf": 0.93, "latency": 0.763786792755127, "raw": "{\"label\":\"date\",\"confidence\":0.93}", "method": "nano", "i": 42, "gold": "date", "correct": true}
+{"pred": "book_flight", "conf": 0.93, "latency": 0.8313169479370117, "raw": "{\"label\":\"book_flight\",\"confidence\":0.93}", "method": "nano", "i": 43, "gold": "book_flight", "correct": true}
+{"pred": "damaged_card", "conf": 0.96, "latency": 0.8903748989105225, "raw": "{\"label\":\"damaged_card\",\"confidence\":0.96}", "method": "nano", "i": 44, "gold": "damaged_card", "correct": true}
+{"pred": "travel_notification", "conf": 0.34, "latency": 1.4261901378631592, "raw": "{\"label\":\"travel_notification\",\"confidence\":0.34}", "method": "nano", "i": 41, "gold": "travel_notification", "correct": true}
+{"pred": "insurance", "conf": 0.74, "latency": 0.8127610683441162, "raw": "{\"label\":\"insurance\",\"confidence\":0.74}", "method": "nano", "i": 45, "gold": "insurance_change", "correct": false}
+{"pred": "international_visa", "conf": 0.88, "latency": 0.7955112457275391, "raw": "{\"label\":\"international_visa\",\"confidence\":0.88}", "method": "nano", "i": 46, "gold": "international_visa", "correct": true}
+{"pred": "fun_fact", "conf": 0.7, "latency": 0.9425380229949951, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.7}", "method": "nano", "i": 47, "gold": "oos", "correct": false}
+{"pred": "freeze_account", "conf": 0.88, "latency": 0.7766342163085938, "raw": "{\"label\":\"freeze_account\",\"confidence\":0.88}", "method": "nano", "i": 49, "gold": "freeze_account", "correct": true}
+{"pred": "oos", "conf": 0.78, "latency": 1.0048880577087402, "raw": "{\"label\":\"oos\",\"confidence\":0.78}", "method": "nano", "i": 48, "gold": "oos", "correct": true}
+{"pred": "restaurant_reviews", "conf": 0.86, "latency": 0.8180761337280273, "raw": "{\"label\":\"restaurant_reviews\",\"confidence\":0.86}", "method": "nano", "i": 52, "gold": "restaurant_reviews", "correct": true}
+{"pred": "distance", "conf": 0.9, "latency": 0.8344612121582031, "raw": "{\"label\":\"distance\",\"confidence\":0.9}", "method": "nano", "i": 51, "gold": "oos", "correct": false}
+{"pred": "reminder", "conf": 0.74, "latency": 1.0767240524291992, "raw": "{\"label\":\"reminder\",\"confidence\":0.74}", "method": "nano", "i": 50, "gold": "reminder", "correct": true}
+{"pred": "next_song", "conf": 0.78, "latency": 0.7843971252441406, "raw": "{\"label\":\"next_song\",\"confidence\":0.78}", "method": "nano", "i": 53, "gold": "next_song", "correct": true}
+{"pred": "who_do_you_work_for", "conf": 0.9, "latency": 0.780487060546875, "raw": "{\"label\":\"who_do_you_work_for\",\"confidence\":0.9}", "method": "nano", "i": 54, "gold": "who_do_you_work_for", "correct": true}
+{"pred": "update_playlist", "conf": 0.72, "latency": 0.7813458442687988, "raw": "{\"label\":\"update_playlist\",\"confidence\":0.72}", "method": "nano", "i": 55, "gold": "update_playlist", "correct": true}
+{"pred": "fun_fact", "conf": 0.62, "latency": 0.7907040119171143, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.62}", "method": "nano", "i": 56, "gold": "tell_joke", "correct": false}
+{"pred": "change_speed", "conf": 0.93, "latency": 0.8282890319824219, "raw": "{\"label\":\"change_speed\",\"confidence\":0.93}", "method": "nano", "i": 58, "gold": "change_speed", "correct": true}
+{"pred": "bill_due", "conf": 0.93, "latency": 0.6909186840057373, "raw": "{\"label\":\"bill_due\",\"confidence\":0.93}", "method": "nano", "i": 60, "gold": "bill_due", "correct": true}
+{"pred": "do_you_have_pets", "conf": 0.74, "latency": 1.0052602291107178, "raw": "{\"label\":\"do_you_have_pets\",\"confidence\":0.74}", "method": "nano", "i": 59, "gold": "do_you_have_pets", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 1.497448205947876, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 57, "gold": "oos", "correct": true}
+{"pred": "fun_fact", "conf": 0.34, "latency": 1.0624518394470215, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.34}", "method": "nano", "i": 61, "gold": "oos", "correct": false}
+{"pred": "cancel_reservation", "conf": 0.9, "latency": 0.7417511940002441, "raw": "{\"label\":\"cancel_reservation\",\"confidence\":0.9}", "method": "nano", "i": 63, "gold": "cancel_reservation", "correct": true}
+{"pred": "update_playlist", "conf": 0.72, "latency": 1.0180351734161377, "raw": "{\"label\":\"update_playlist\",\"confidence\":0.72}", "method": "nano", "i": 62, "gold": "update_playlist", "correct": true}
+{"pred": "current_location", "conf": 0.9, "latency": 0.967871904373169, "raw": "{\"label\":\"current_location\",\"confidence\":0.9}", "method": "nano", "i": 64, "gold": "current_location", "correct": true}
+{"pred": "play_music", "conf": 0.9, "latency": 0.6754748821258545, "raw": "{\"label\":\"play_music\",\"confidence\":0.9}", "method": "nano", "i": 67, "gold": "play_music", "correct": true}
+{"pred": "improve_credit_score", "conf": 0.93, "latency": 0.7935261726379395, "raw": "{\"label\":\"improve_credit_score\",\"confidence\":0.93}", "method": "nano", "i": 66, "gold": "improve_credit_score", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 0.9982168674468994, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 65, "gold": "oos", "correct": true}
+{"pred": "roll_dice", "conf": 0.98, "latency": 0.7023870944976807, "raw": "{\"label\":\"roll_dice\",\"confidence\":0.98}", "method": "nano", "i": 68, "gold": "roll_dice", "correct": true}
+{"pred": "min_payment", "conf": 0.72, "latency": 1.1161527633666992, "raw": "{\"label\":\"min_payment\",\"confidence\":0.72}", "method": "nano", "i": 69, "gold": "min_payment", "correct": true}
+{"pred": "international_visa", "conf": 0.9, "latency": 0.8805561065673828, "raw": "{\"label\":\"international_visa\",\"confidence\":0.9}", "method": "nano", "i": 70, "gold": "international_visa", "correct": true}
+{"pred": "travel_suggestion", "conf": 0.78, "latency": 0.8383407592773438, "raw": "{\"label\":\"travel_suggestion\",\"confidence\":0.78}", "method": "nano", "i": 72, "gold": "travel_suggestion", "correct": true}
+{"pred": "last_maintenance", "conf": 0.9, "latency": 0.9162499904632568, "raw": "{\"label\":\"last_maintenance\",\"confidence\":0.9}", "method": "nano", "i": 73, "gold": "last_maintenance", "correct": true}
+{"pred": "oos", "conf": 0.9, "latency": 1.1753859519958496, "raw": "{\"label\":\"oos\",\"confidence\":0.9}", "method": "nano", "i": 71, "gold": "oos", "correct": true}
+{"pred": "card_declined", "conf": 0.74, "latency": 1.0939910411834717, "raw": "{\"label\":\"card_declined\",\"confidence\":0.74}", "method": "nano", "i": 74, "gold": "card_declined", "correct": true}
+{"pred": "ingredients_list", "conf": 0.86, "latency": 0.8287379741668701, "raw": "{\"label\":\"ingredients_list\",\"confidence\":0.86}", "method": "nano", "i": 75, "gold": "ingredients_list", "correct": true}
+{"pred": "oil_change_how", "conf": 0.9, "latency": 0.8251469135284424, "raw": "{\"label\":\"oil_change_how\",\"confidence\":0.9}", "method": "nano", "i": 76, "gold": "oil_change_how", "correct": true}
+{"pred": "reset_settings", "conf": 0.86, "latency": 0.7406041622161865, "raw": "{\"label\":\"reset_settings\",\"confidence\":0.86}", "method": "nano", "i": 77, "gold": "reset_settings", "correct": true}
+{"pred": "fun_fact", "conf": 0.74, "latency": 0.7149651050567627, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.74}", "method": "nano", "i": 78, "gold": "oos", "correct": false}
+{"pred": "tell_joke", "conf": 0.98, "latency": 0.7843997478485107, "raw": "{\"label\":\"tell_joke\",\"confidence\":0.98}", "method": "nano", "i": 79, "gold": "tell_joke", "correct": true}
+{"pred": "who_made_you", "conf": 0.9, "latency": 0.8171567916870117, "raw": "{\"label\":\"who_made_you\",\"confidence\":0.9}", "method": "nano", "i": 80, "gold": "who_made_you", "correct": true}
+{"pred": "jump_start", "conf": 0.93, "latency": 0.677299976348877, "raw": "{\"label\":\"jump_start\",\"confidence\":0.93}", "method": "nano", "i": 82, "gold": "jump_start", "correct": true}
+{"pred": "mpg", "conf": 0.93, "latency": 0.8363189697265625, "raw": "{\"label\":\"mpg\",\"confidence\":0.93}", "method": "nano", "i": 81, "gold": "mpg", "correct": true}
+{"pred": "meeting_schedule", "conf": 0.9, "latency": 0.6908338069915771, "raw": "{\"label\":\"meeting_schedule\",\"confidence\":0.9}", "method": "nano", "i": 84, "gold": "meeting_schedule", "correct": true}
+{"pred": "are_you_a_bot", "conf": 0.97, "latency": 0.7341089248657227, "raw": "{\"label\":\"are_you_a_bot\",\"confidence\":0.97}", "method": "nano", "i": 85, "gold": "are_you_a_bot", "correct": true}
+{"pred": "current_location", "conf": 0.93, "latency": 1.1593918800354004, "raw": "{\"label\":\"current_location\",\"confidence\":0.93}", "method": "nano", "i": 83, "gold": "current_location", "correct": true}
+{"pred": "pto_request", "conf": 0.86, "latency": 0.9491159915924072, "raw": "{\"label\":\"pto_request\",\"confidence\":0.86}", "method": "nano", "i": 86, "gold": "pto_request", "correct": true}
+{"pred": "change_language", "conf": 0.93, "latency": 0.730949878692627, "raw": "{\"label\":\"change_language\",\"confidence\":0.93}", "method": "nano", "i": 88, "gold": "change_language", "correct": true}
+{"pred": "bill_balance", "conf": 0.72, "latency": 0.9150593280792236, "raw": "{\"label\":\"bill_balance\",\"confidence\":0.72}", "method": "nano", "i": 87, "gold": "bill_balance", "correct": true}
+{"pred": "gas_type", "conf": 0.9, "latency": 1.0610871315002441, "raw": "{\"label\":\"gas_type\",\"confidence\":0.9}", "method": "nano", "i": 89, "gold": "gas_type", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 0.9447922706604004, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "nano", "i": 90, "gold": "oos", "correct": true}
+{"pred": "directions", "conf": 0.66, "latency": 1.0086750984191895, "raw": "{\"label\":\"directions\",\"confidence\":0.66}", "method": "nano", "i": 91, "gold": "oos", "correct": false}
+{"pred": "current_location", "conf": 0.9, "latency": 0.7467689514160156, "raw": "{\"label\":\"current_location\",\"confidence\":0.9}", "method": "nano", "i": 93, "gold": "current_location", "correct": true}
+{"pred": "oos", "conf": 0.78, "latency": 1.063796043395996, "raw": "{\"label\":\"oos\",\"confidence\":0.78}", "method": "nano", "i": 92, "gold": "oos", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 0.9427127838134766, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 94, "gold": "oos", "correct": true}
+{"pred": "yes", "conf": 0.93, "latency": 0.7076709270477295, "raw": "{\"label\":\"yes\",\"confidence\":0.93}", "method": "nano", "i": 96, "gold": "yes", "correct": true}
+{"pred": "maybe", "conf": 0.33, "latency": 1.0142419338226318, "raw": "{\"label\":\"maybe\",\"confidence\":0.33}", "method": "nano", "i": 95, "gold": "yes", "correct": false}
+{"pred": "pto_used", "conf": 0.9, "latency": 0.7200613021850586, "raw": "{\"label\":\"pto_used\",\"confidence\":0.9}", "method": "nano", "i": 98, "gold": "pto_used", "correct": true}
+{"pred": "cancel_reservation", "conf": 0.97, "latency": 0.7634191513061523, "raw": "{\"label\":\"cancel_reservation\",\"confidence\":0.97}", "method": "nano", "i": 97, "gold": "cancel_reservation", "correct": true}
+{"pred": "apr", "conf": 0.98, "latency": 0.7550027370452881, "raw": "{\"label\":\"apr\",\"confidence\":0.98}", "method": "nano", "i": 100, "gold": "apr", "correct": true}
+{"pred": "definition", "conf": 0.93, "latency": 0.7951297760009766, "raw": "{\"label\":\"definition\",\"confidence\":0.93}", "method": "nano", "i": 99, "gold": "definition", "correct": true}
+{"pred": "card_declined", "conf": 0.86, "latency": 0.7963941097259521, "raw": "{\"label\":\"card_declined\",\"confidence\":0.86}", "method": "nano", "i": 102, "gold": "card_declined", "correct": true}
+{"pred": "traffic", "conf": 0.93, "latency": 0.9404110908508301, "raw": "{\"label\":\"traffic\",\"confidence\":0.93}", "method": "nano", "i": 101, "gold": "traffic", "correct": true}
+{"pred": "min_payment", "conf": 0.74, "latency": 0.8180158138275146, "raw": "{\"label\":\"min_payment\",\"confidence\":0.74}", "method": "nano", "i": 104, "gold": "min_payment", "correct": true}
+{"pred": "how_old_are_you", "conf": 0.98, "latency": 0.778968095779419, "raw": "{\"label\":\"how_old_are_you\",\"confidence\":0.98}", "method": "nano", "i": 105, "gold": "how_old_are_you", "correct": true}
+{"pred": "travel_alert", "conf": 0.62, "latency": 1.0879199504852295, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.62}", "method": "nano", "i": 103, "gold": "travel_notification", "correct": false}
+{"pred": "restaurant_reservation", "conf": 0.84, "latency": 0.990178108215332, "raw": "{\"label\":\"restaurant_reservation\",\"confidence\":0.84}", "method": "nano", "i": 106, "gold": "accept_reservations", "correct": false}
+{"pred": "goodbye", "conf": 0.99, "latency": 0.749835729598999, "raw": "{\"label\":\"goodbye\",\"confidence\":0.99}", "method": "nano", "i": 108, "gold": "goodbye", "correct": true}
+{"pred": "alarm", "conf": 0.93, "latency": 0.6958489418029785, "raw": "{\"label\":\"alarm\",\"confidence\":0.93}", "method": "nano", "i": 110, "gold": "alarm", "correct": true}
+{"pred": "book_flight", "conf": 0.86, "latency": 0.942378044128418, "raw": "{\"label\":\"book_flight\",\"confidence\":0.86}", "method": "nano", "i": 109, "gold": "book_flight", "correct": true}
+{"pred": "oos", "conf": 0.83, "latency": 1.2343590259552002, "raw": "{\"label\":\"oos\",\"confidence\":0.83}", "method": "nano", "i": 107, "gold": "oos", "correct": true}
+{"pred": "card_declined", "conf": 0.9, "latency": 1.055337905883789, "raw": "{\"label\":\"card_declined\",\"confidence\":0.9}", "method": "nano", "i": 112, "gold": "card_declined", "correct": true}
+{"pred": "fun_fact", "conf": 0.66, "latency": 1.2907190322875977, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.66}", "method": "nano", "i": 111, "gold": "oos", "correct": false}
+{"pred": "oos", "conf": 0.83, "latency": 0.9509220123291016, "raw": "{\"label\":\"oos\",\"confidence\":0.83}", "method": "nano", "i": 113, "gold": "oos", "correct": true}
+{"pred": "transfer", "conf": 0.9, "latency": 0.8000767230987549, "raw": "{\"label\":\"transfer\",\"confidence\":0.9}", "method": "nano", "i": 114, "gold": "transfer", "correct": true}
+{"pred": "measurement_conversion", "conf": 0.97, "latency": 0.7886090278625488, "raw": "{\"label\":\"measurement_conversion\",\"confidence\":0.97}", "method": "nano", "i": 115, "gold": "measurement_conversion", "correct": true}
+{"pred": "change_user_name", "conf": 0.86, "latency": 0.8132407665252686, "raw": "{\"label\":\"change_user_name\",\"confidence\":0.86}", "method": "nano", "i": 116, "gold": "change_ai_name", "correct": false}
+{"pred": "restaurant_suggestion", "conf": 0.86, "latency": 0.7580111026763916, "raw": "{\"label\":\"restaurant_suggestion\",\"confidence\":0.86}", "method": "nano", "i": 117, "gold": "restaurant_suggestion", "correct": true}
+{"pred": "calendar", "conf": 0.86, "latency": 0.59415602684021, "raw": "{\"label\":\"calendar\",\"confidence\":0.86}", "method": "nano", "i": 120, "gold": "calendar", "correct": true}
+{"pred": "car_rental", "conf": 0.97, "latency": 1.0639569759368896, "raw": "{\"label\":\"car_rental\",\"confidence\":0.97}", "method": "nano", "i": 118, "gold": "car_rental", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 1.0263359546661377, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 119, "gold": "oos", "correct": true}
+{"pred": "application_status", "conf": 0.93, "latency": 0.8517320156097412, "raw": "{\"label\":\"application_status\",\"confidence\":0.93}", "method": "nano", "i": 122, "gold": "application_status", "correct": true}
+{"pred": "international_fees", "conf": 0.9, "latency": 0.9060590267181396, "raw": "{\"label\":\"international_fees\",\"confidence\":0.9}", "method": "nano", "i": 124, "gold": "international_fees", "correct": true}
+{"pred": "play_music", "conf": 0.9, "latency": 0.9644041061401367, "raw": "{\"label\":\"play_music\",\"confidence\":0.9}", "method": "nano", "i": 123, "gold": "play_music", "correct": true}
+{"pred": "directions", "conf": 0.56, "latency": 1.7041661739349365, "raw": "{\"label\":\"directions\",\"confidence\":0.56}", "method": "nano", "i": 121, "gold": "directions", "correct": true}
+{"pred": "find_phone", "conf": 0.9, "latency": 0.8326981067657471, "raw": "{\"label\":\"find_phone\",\"confidence\":0.9}", "method": "nano", "i": 125, "gold": "oos", "correct": false}
+{"pred": "apr", "conf": 0.86, "latency": 0.6912519931793213, "raw": "{\"label\":\"apr\",\"confidence\":0.86}", "method": "nano", "i": 127, "gold": "apr", "correct": true}
+{"pred": "todo_list", "conf": 0.62, "latency": 1.0711419582366943, "raw": "{\"label\":\"todo_list\",\"confidence\":0.62}", "method": "nano", "i": 126, "gold": "oos", "correct": false}
+{"pred": "cancel_reservation", "conf": 0.86, "latency": 1.0047709941864014, "raw": "{\"label\":\"cancel_reservation\",\"confidence\":0.86}", "method": "nano", "i": 128, "gold": "cancel_reservation", "correct": true}
+{"pred": "calendar_update", "conf": 0.74, "latency": 0.928947925567627, "raw": "{\"label\":\"calendar_update\",\"confidence\":0.74}", "method": "nano", "i": 130, "gold": "calendar_update", "correct": true}
+{"pred": "order_status", "conf": 0.72, "latency": 0.8988580703735352, "raw": "{\"label\":\"order_status\",\"confidence\":0.72}", "method": "nano", "i": 132, "gold": "order_status", "correct": true}
+{"pred": "goodbye", "conf": 0.42, "latency": 1.3654820919036865, "raw": "{\"label\":\"goodbye\",\"confidence\":0.42}", "method": "nano", "i": 129, "gold": "cancel", "correct": false}
+{"pred": "freeze_account", "conf": 0.72, "latency": 1.1456780433654785, "raw": "{\"label\":\"freeze_account\",\"confidence\":0.72}", "method": "nano", "i": 131, "gold": "account_blocked", "correct": false}
+{"pred": "translate", "conf": 0.86, "latency": 1.0614089965820312, "raw": "{\"label\":\"translate\",\"confidence\":0.86}", "method": "nano", "i": 133, "gold": "translate", "correct": true}
+{"pred": "traffic", "conf": 0.93, "latency": 0.770054817199707, "raw": "{\"label\":\"traffic\",\"confidence\":0.93}", "method": "nano", "i": 134, "gold": "traffic", "correct": true}
+{"pred": "definition", "conf": 0.43, "latency": 0.6668689250946045, "raw": "{\"label\":\"definition\",\"confidence\":0.43}", "method": "nano", "i": 136, "gold": "oos", "correct": false}
+{"pred": "weather", "conf": 0.93, "latency": 0.6425750255584717, "raw": "{\"label\":\"weather\",\"confidence\":0.93}", "method": "nano", "i": 137, "gold": "oos", "correct": false}
+{"pred": "traffic", "conf": 0.9, "latency": 1.012707233428955, "raw": "{\"label\":\"traffic\",\"confidence\":0.9}", "method": "nano", "i": 135, "gold": "traffic", "correct": true}
+{"pred": "book_flight", "conf": 0.98, "latency": 0.6901319026947021, "raw": "{\"label\":\"book_flight\",\"confidence\":0.98}", "method": "nano", "i": 139, "gold": "book_flight", "correct": true}
+{"pred": "travel_alert", "conf": 0.93, "latency": 0.7986078262329102, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.93}", "method": "nano", "i": 141, "gold": "travel_alert", "correct": true}
+{"pred": "definition", "conf": 0.38, "latency": 0.9225161075592041, "raw": "{\"label\":\"definition\",\"confidence\":0.38}", "method": "nano", "i": 140, "gold": "oos", "correct": false}
+{"pred": "alarm", "conf": 0.74, "latency": 1.2442831993103027, "raw": "{\"label\":\"alarm\",\"confidence\":0.74}", "method": "nano", "i": 142, "gold": "schedule_maintenance", "correct": false}
+{"pred": "oos", "conf": 0.87, "latency": 1.0454180240631104, "raw": "{\"label\":\"oos\",\"confidence\":0.87}", "method": "nano", "i": 144, "gold": "insurance", "correct": false}
+{"pred": "what_can_i_ask_you", "conf": 0.42, "latency": 1.9021050930023193, "raw": "{\"label\":\"what_can_i_ask_you\",\"confidence\":0.42}", "method": "nano", "i": 138, "gold": "who_do_you_work_for", "correct": false}
+{"pred": "oos", "conf": 0.78, "latency": 1.577070951461792, "raw": "{\"label\":\"oos\",\"confidence\":0.78}", "method": "nano", "i": 143, "gold": "oos", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 1.1765038967132568, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 146, "gold": "oos", "correct": true}
+{"pred": "todo_list", "conf": 0.74, "latency": 0.8899459838867188, "raw": "{\"label\":\"todo_list\",\"confidence\":0.74}", "method": "nano", "i": 147, "gold": "todo_list_update", "correct": false}
+{"pred": "balance", "conf": 0.78, "latency": 0.8811321258544922, "raw": "{\"label\":\"balance\",\"confidence\":0.78}", "method": "nano", "i": 148, "gold": "balance", "correct": true}
+{"pred": "oos", "conf": 0.74, "latency": 1.0893139839172363, "raw": "{\"label\":\"oos\",\"confidence\":0.74}", "method": "nano", "i": 149, "gold": "oos", "correct": true}
+{"pred": "reminder", "conf": 0.9, "latency": 0.6834738254547119, "raw": "{\"label\":\"reminder\",\"confidence\":0.9}", "method": "nano", "i": 150, "gold": "reminder_update", "correct": false}
+{"pred": "where_are_you_from", "conf": 0.9, "latency": 0.5653607845306396, "raw": "{\"label\":\"where_are_you_from\",\"confidence\":0.9}", "method": "nano", "i": 152, "gold": "where_are_you_from", "correct": true}
+{"pred": "pto_request", "conf": 0.78, "latency": 0.8935680389404297, "raw": "{\"label\":\"pto_request\",\"confidence\":0.78}", "method": "nano", "i": 151, "gold": "pto_request", "correct": true}
+{"pred": "maybe", "conf": 0.9, "latency": 0.6762561798095703, "raw": "{\"label\":\"maybe\",\"confidence\":0.9}", "method": "nano", "i": 153, "gold": "maybe", "correct": true}
+{"pred": "credit_limit_change", "conf": 0.9, "latency": 0.8408498764038086, "raw": "{\"label\":\"credit_limit_change\",\"confidence\":0.9}", "method": "nano", "i": 155, "gold": "credit_limit_change", "correct": true}
+{"pred": "meaning_of_life", "conf": 0.97, "latency": 0.9838390350341797, "raw": "{\"label\":\"meaning_of_life\",\"confidence\":0.97}", "method": "nano", "i": 154, "gold": "meaning_of_life", "correct": true}
+{"pred": "definition", "conf": 0.93, "latency": 0.8163690567016602, "raw": "{\"label\":\"definition\",\"confidence\":0.93}", "method": "nano", "i": 156, "gold": "definition", "correct": true}
+{"pred": "oos", "conf": 0.83, "latency": 2.9428060054779053, "raw": "{\"label\":\"oos\",\"confidence\":0.83}", "method": "nano", "i": 145, "gold": "oos", "correct": true}
+{"pred": "cook_time", "conf": 0.9, "latency": 0.8357009887695312, "raw": "{\"label\":\"cook_time\",\"confidence\":0.9}", "method": "nano", "i": 158, "gold": "cook_time", "correct": true}
+{"pred": "w2", "conf": 0.93, "latency": 0.8929009437561035, "raw": "{\"label\":\"w2\",\"confidence\":0.93}", "method": "nano", "i": 157, "gold": "w2", "correct": true}
+{"pred": "alarm", "conf": 0.97, "latency": 0.8164350986480713, "raw": "{\"label\":\"alarm\",\"confidence\":0.97}", "method": "nano", "i": 159, "gold": "alarm", "correct": true}
+{"pred": "oos", "conf": 0.78, "latency": 0.9959869384765625, "raw": "{\"label\":\"oos\",\"confidence\":0.78}", "method": "nano", "i": 160, "gold": "who_made_you", "correct": false}
+{"pred": "order_status", "conf": 0.9, "latency": 0.706773042678833, "raw": "{\"label\":\"order_status\",\"confidence\":0.9}", "method": "nano", "i": 163, "gold": "order_status", "correct": true}
+{"pred": "replacement_card_duration", "conf": 0.2, "latency": 0.7384231090545654, "raw": "{\"label\":\"replacement_card_duration\",\"confidence\":0.2}", "method": "nano", "i": 164, "gold": "damaged_card", "correct": false}
+{"pred": "oos", "conf": 0.9, "latency": 0.8926970958709717, "raw": "{\"label\":\"oos\",\"confidence\":0.9}", "method": "nano", "i": 161, "gold": "oos", "correct": true}
+{"pred": "reminder", "conf": 0.74, "latency": 0.9711179733276367, "raw": "{\"label\":\"reminder\",\"confidence\":0.74}", "method": "nano", "i": 162, "gold": "reminder", "correct": true}
+{"pred": "change_user_name", "conf": 0.9, "latency": 0.7473959922790527, "raw": "{\"label\":\"change_user_name\",\"confidence\":0.9}", "method": "nano", "i": 165, "gold": "change_user_name", "correct": true}
+{"pred": "oil_change_when", "conf": 0.9, "latency": 0.7309629917144775, "raw": "{\"label\":\"oil_change_when\",\"confidence\":0.9}", "method": "nano", "i": 166, "gold": "oil_change_when", "correct": true}
+{"pred": "reminder", "conf": 0.9, "latency": 0.7777681350708008, "raw": "{\"label\":\"reminder\",\"confidence\":0.9}", "method": "nano", "i": 168, "gold": "reminder_update", "correct": false}
+{"pred": "oil_change_when", "conf": 0.86, "latency": 0.782642126083374, "raw": "{\"label\":\"oil_change_when\",\"confidence\":0.86}", "method": "nano", "i": 170, "gold": "oil_change_when", "correct": true}
+{"pred": "repeat", "conf": 0.86, "latency": 1.0167531967163086, "raw": "{\"label\":\"repeat\",\"confidence\":0.86}", "method": "nano", "i": 167, "gold": "repeat", "correct": true}
+{"pred": "recipe", "conf": 0.35, "latency": 1.0554580688476562, "raw": "{\"label\":\"recipe\",\"confidence\":0.35}", "method": "nano", "i": 169, "gold": "recipe", "correct": true}
+{"pred": "restaurant_reviews", "conf": 0.93, "latency": 0.6973598003387451, "raw": "{\"label\":\"restaurant_reviews\",\"confidence\":0.93}", "method": "nano", "i": 174, "gold": "restaurant_reviews", "correct": true}
+{"pred": "what_are_your_hobbies", "conf": 0.94, "latency": 0.6316931247711182, "raw": "{\"label\":\"what_are_your_hobbies\",\"confidence\":0.94}", "method": "nano", "i": 175, "gold": "what_are_your_hobbies", "correct": true}
+{"pred": "todo_list", "conf": 0.86, "latency": 0.9441699981689453, "raw": "{\"label\":\"todo_list\",\"confidence\":0.86}", "method": "nano", "i": 172, "gold": "todo_list", "correct": true}
+{"pred": "make_call", "conf": 0.32, "latency": 1.2178428173065186, "raw": "{\"label\":\"make_call\",\"confidence\":0.32}", "method": "nano", "i": 171, "gold": "oos", "correct": false}
+{"pred": "travel_alert", "conf": 0.42, "latency": 1.112429141998291, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.42}", "method": "nano", "i": 173, "gold": "oos", "correct": false}
+{"pred": "exchange_rate", "conf": 0.86, "latency": 0.9915149211883545, "raw": "{\"label\":\"exchange_rate\",\"confidence\":0.86}", "method": "nano", "i": 176, "gold": "exchange_rate", "correct": true}
+{"pred": "current_location", "conf": 0.96, "latency": 0.8383429050445557, "raw": "{\"label\":\"current_location\",\"confidence\":0.96}", "method": "nano", "i": 178, "gold": "share_location", "correct": false}
+{"pred": "user_name", "conf": 0.78, "latency": 0.9516799449920654, "raw": "{\"label\":\"user_name\",\"confidence\":0.78}", "method": "nano", "i": 179, "gold": "user_name", "correct": true}
+{"pred": "find_phone", "conf": 0.86, "latency": 0.9245917797088623, "raw": "{\"label\":\"find_phone\",\"confidence\":0.86}", "method": "nano", "i": 180, "gold": "find_phone", "correct": true}
+{"pred": "expiration_date", "conf": 0.93, "latency": 1.0543291568756104, "raw": "{\"label\":\"expiration_date\",\"confidence\":0.93}", "method": "nano", "i": 177, "gold": "expiration_date", "correct": true}
+{"pred": "plug_type", "conf": 0.86, "latency": 0.8387179374694824, "raw": "{\"label\":\"plug_type\",\"confidence\":0.86}", "method": "nano", "i": 181, "gold": "plug_type", "correct": true}
+{"pred": "weather", "conf": 0.86, "latency": 0.9158120155334473, "raw": "{\"label\":\"weather\",\"confidence\":0.86}", "method": "nano", "i": 182, "gold": "smart_home", "correct": false}
+{"pred": "vaccines", "conf": 0.9, "latency": 0.7124552726745605, "raw": "{\"label\":\"vaccines\",\"confidence\":0.9}", "method": "nano", "i": 184, "gold": "vaccines", "correct": true}
+{"pred": "report_lost_card", "conf": 0.93, "latency": 0.7037718296051025, "raw": "{\"label\":\"report_lost_card\",\"confidence\":0.93}", "method": "nano", "i": 186, "gold": "report_lost_card", "correct": true}
+{"pred": "restaurant_reservation", "conf": 0.66, "latency": 0.9350519180297852, "raw": "{\"label\":\"restaurant_reservation\",\"confidence\":0.66}", "method": "nano", "i": 183, "gold": "accept_reservations", "correct": false}
+{"pred": "reminder", "conf": 0.9, "latency": 0.7987420558929443, "raw": "{\"label\":\"reminder\",\"confidence\":0.9}", "method": "nano", "i": 188, "gold": "reminder_update", "correct": false}
+{"pred": "change_speed", "conf": 0.9, "latency": 1.246532917022705, "raw": "{\"label\":\"change_speed\",\"confidence\":0.9}", "method": "nano", "i": 185, "gold": "change_speed", "correct": true}
+{"pred": "who_made_you", "conf": 0.86, "latency": 1.1281490325927734, "raw": "{\"label\":\"who_made_you\",\"confidence\":0.86}", "method": "nano", "i": 187, "gold": "who_made_you", "correct": true}
+{"pred": "change_ai_name", "conf": 0.93, "latency": 0.7264900207519531, "raw": "{\"label\":\"change_ai_name\",\"confidence\":0.93}", "method": "nano", "i": 189, "gold": "change_ai_name", "correct": true}
+{"pred": "uber", "conf": 0.93, "latency": 0.7529778480529785, "raw": "{\"label\":\"uber\",\"confidence\":0.93}", "method": "nano", "i": 190, "gold": "uber", "correct": true}
+{"pred": "vaccines", "conf": 0.72, "latency": 0.8920092582702637, "raw": "{\"label\":\"vaccines\",\"confidence\":0.72}", "method": "nano", "i": 191, "gold": "oos", "correct": false}
+{"pred": "spelling", "conf": 0.86, "latency": 0.9225029945373535, "raw": "{\"label\":\"spelling\",\"confidence\":0.86}", "method": "nano", "i": 192, "gold": "spelling", "correct": true}
+{"pred": "weather", "conf": 0.9, "latency": 0.6608231067657471, "raw": "{\"label\":\"weather\",\"confidence\":0.9}", "method": "nano", "i": 196, "gold": "weather", "correct": true}
+{"pred": "insurance", "conf": 0.63, "latency": 0.9753541946411133, "raw": "{\"label\":\"insurance\",\"confidence\":0.63}", "method": "nano", "i": 193, "gold": "insurance_change", "correct": false}
+{"pred": "meaning_of_life", "conf": 0.93, "latency": 0.9982316493988037, "raw": "{\"label\":\"meaning_of_life\",\"confidence\":0.93}", "method": "nano", "i": 195, "gold": "meaning_of_life", "correct": true}
+{"pred": "pto_used", "conf": 0.82, "latency": 1.2076809406280518, "raw": "{\"label\":\"pto_used\",\"confidence\":0.82}", "method": "nano", "i": 194, "gold": "pto_used", "correct": true}
+{"pred": "pto_request_status", "conf": 0.72, "latency": 1.1530349254608154, "raw": "{\"label\":\"pto_request_status\",\"confidence\":0.72}", "method": "nano", "i": 197, "gold": "pto_request_status", "correct": true}
+{"pred": "repeat", "conf": 0.62, "latency": 0.7601280212402344, "raw": "{\"label\":\"repeat\",\"confidence\":0.62}", "method": "nano", "i": 199, "gold": "repeat", "correct": true}
+{"pred": "improve_credit_score", "conf": 0.97, "latency": 0.894036054611206, "raw": "{\"label\":\"improve_credit_score\",\"confidence\":0.97}", "method": "nano", "i": 198, "gold": "improve_credit_score", "correct": true}
+{"pred": "expiration_date", "conf": 0.99, "latency": 1.3040950298309326, "raw": "{\"label\":\"expiration_date\",\"confidence\":0.99}", "method": "terra", "i": 5, "gold": "expiration_date", "correct": true}
+{"pred": "reminder", "conf": 0.99, "latency": 1.38942289352417, "raw": "{\"label\":\"reminder\",\"confidence\":0.99}", "method": "terra", "i": 3, "gold": "reminder_update", "correct": false}
+{"pred": "oos", "conf": 0.98, "latency": 1.7164008617401123, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 1, "gold": "oos", "correct": true}
+{"pred": "timezone", "conf": 0.99, "latency": 2.2478811740875244, "raw": "{\"label\":\"timezone\",\"confidence\":0.99}", "method": "terra", "i": 4, "gold": "timezone", "correct": true}
+{"pred": "flip_coin", "conf": 0.99, "latency": 2.2920641899108887, "raw": "{\"label\":\"flip_coin\",\"confidence\":0.99}", "method": "terra", "i": 2, "gold": "flip_coin", "correct": true}
+{"pred": "interest_rate", "conf": 0.98, "latency": 0.9954349994659424, "raw": "{\"label\":\"interest_rate\",\"confidence\":0.98}", "method": "terra", "i": 6, "gold": "interest_rate", "correct": true}
+{"pred": "rewards_balance", "conf": 0.98, "latency": 2.53825306892395, "raw": "{\"label\":\"rewards_balance\",\"confidence\":0.98}", "method": "terra", "i": 0, "gold": "rewards_balance", "correct": true}
+{"pred": "bill_balance", "conf": 0.93, "latency": 1.2888598442077637, "raw": "{\"label\":\"bill_balance\",\"confidence\":0.93}", "method": "terra", "i": 7, "gold": "bill_balance", "correct": true}
+{"pred": "uber", "conf": 0.99, "latency": 1.130194902420044, "raw": "{\"label\":\"uber\",\"confidence\":0.99}", "method": "terra", "i": 10, "gold": "uber", "correct": true}
+{"pred": "report_fraud", "conf": 0.99, "latency": 1.188204050064087, "raw": "{\"label\":\"report_fraud\",\"confidence\":0.99}", "method": "terra", "i": 9, "gold": "report_fraud", "correct": true}
+{"pred": "are_you_a_bot", "conf": 0.99, "latency": 1.1419188976287842, "raw": "{\"label\":\"are_you_a_bot\",\"confidence\":0.99}", "method": "terra", "i": 12, "gold": "are_you_a_bot", "correct": true}
+{"pred": "balance", "conf": 0.99, "latency": 1.3828678131103516, "raw": "{\"label\":\"balance\",\"confidence\":0.99}", "method": "terra", "i": 11, "gold": "balance", "correct": true}
+{"pred": "travel_alert", "conf": 0.99, "latency": 1.3278868198394775, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.99}", "method": "terra", "i": 13, "gold": "travel_alert", "correct": true}
+{"pred": "text", "conf": 0.78, "latency": 2.2909371852874756, "raw": "{\"label\":\"text\",\"confidence\":0.78}", "method": "terra", "i": 8, "gold": "oos", "correct": false}
+{"pred": "greeting", "conf": 0.99, "latency": 1.0457770824432373, "raw": "{\"label\":\"greeting\",\"confidence\":0.99}", "method": "terra", "i": 15, "gold": "greeting", "correct": true}
+{"pred": "translate", "conf": 0.99, "latency": 1.1338000297546387, "raw": "{\"label\":\"translate\",\"confidence\":0.99}", "method": "terra", "i": 17, "gold": "translate", "correct": true}
+{"pred": "direct_deposit", "conf": 0.99, "latency": 1.1145200729370117, "raw": "{\"label\":\"direct_deposit\",\"confidence\":0.99}", "method": "terra", "i": 18, "gold": "direct_deposit", "correct": true}
+{"pred": "make_call", "conf": 0.99, "latency": 1.1140141487121582, "raw": "{\"label\":\"make_call\",\"confidence\":0.99}", "method": "terra", "i": 19, "gold": "make_call", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 1.684997797012329, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 16, "gold": "oos", "correct": true}
+{"pred": "book_hotel", "conf": 0.99, "latency": 2.5109639167785645, "raw": "{\"label\":\"book_hotel\",\"confidence\":0.99}", "method": "terra", "i": 14, "gold": "book_hotel", "correct": true}
+{"pred": "schedule_maintenance", "conf": 0.94, "latency": 1.500678300857544, "raw": "{\"label\":\"schedule_maintenance\",\"confidence\":0.94}", "method": "terra", "i": 20, "gold": "schedule_maintenance", "correct": true}
+{"pred": "pto_request", "conf": 0.98, "latency": 1.092045783996582, "raw": "{\"label\":\"pto_request\",\"confidence\":0.98}", "method": "terra", "i": 24, "gold": "pto_request", "correct": true}
+{"pred": "freeze_account", "conf": 0.99, "latency": 1.5312910079956055, "raw": "{\"label\":\"freeze_account\",\"confidence\":0.99}", "method": "terra", "i": 22, "gold": "freeze_account", "correct": true}
+{"pred": "find_phone", "conf": 0.99, "latency": 1.007214069366455, "raw": "{\"label\":\"find_phone\",\"confidence\":0.99}", "method": "terra", "i": 25, "gold": "find_phone", "correct": true}
+{"pred": "find_phone", "conf": 0.99, "latency": 1.1944530010223389, "raw": "{\"label\":\"find_phone\",\"confidence\":0.99}", "method": "terra", "i": 26, "gold": "find_phone", "correct": true}
+{"pred": "tire_change", "conf": 0.82, "latency": 2.321209192276001, "raw": "{\"label\":\"tire_change\",\"confidence\":0.82}", "method": "terra", "i": 23, "gold": "tire_change", "correct": true}
+{"pred": "traffic", "conf": 0.99, "latency": 1.0094482898712158, "raw": "{\"label\":\"traffic\",\"confidence\":0.99}", "method": "terra", "i": 28, "gold": "traffic", "correct": true}
+{"pred": "timer", "conf": 0.99, "latency": 1.008876085281372, "raw": "{\"label\":\"timer\",\"confidence\":0.99}", "method": "terra", "i": 29, "gold": "timer", "correct": true}
+{"pred": "measurement_conversion", "conf": 0.99, "latency": 1.1144237518310547, "raw": "{\"label\":\"measurement_conversion\",\"confidence\":0.99}", "method": "terra", "i": 30, "gold": "measurement_conversion", "correct": true}
+{"pred": "date", "conf": 0.99, "latency": 1.1435868740081787, "raw": "{\"label\":\"date\",\"confidence\":0.99}", "method": "terra", "i": 31, "gold": "date", "correct": true}
+{"pred": "directions", "conf": 0.78, "latency": 2.179792881011963, "raw": "{\"label\":\"directions\",\"confidence\":0.78}", "method": "terra", "i": 27, "gold": "oos", "correct": false}
+{"pred": "pto_balance", "conf": 0.99, "latency": 1.2241580486297607, "raw": "{\"label\":\"pto_balance\",\"confidence\":0.99}", "method": "terra", "i": 32, "gold": "pto_balance", "correct": true}
+{"pred": "travel_alert", "conf": 0.9, "latency": 1.5039818286895752, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.9}", "method": "terra", "i": 33, "gold": "travel_alert", "correct": true}
+{"pred": "carry_on", "conf": 0.99, "latency": 0.9984841346740723, "raw": "{\"label\":\"carry_on\",\"confidence\":0.99}", "method": "terra", "i": 35, "gold": "carry_on", "correct": true}
+{"pred": "recipe", "conf": 0.98, "latency": 1.4853599071502686, "raw": "{\"label\":\"recipe\",\"confidence\":0.98}", "method": "terra", "i": 34, "gold": "recipe", "correct": true}
+{"pred": "expiration_date", "conf": 0.99, "latency": 0.9080681800842285, "raw": "{\"label\":\"expiration_date\",\"confidence\":0.99}", "method": "terra", "i": 37, "gold": "expiration_date", "correct": true}
+{"pred": "reset_settings", "conf": 0.91, "latency": 1.2870409488677979, "raw": "{\"label\":\"reset_settings\",\"confidence\":0.91}", "method": "terra", "i": 36, "gold": "reset_settings", "correct": true}
+{"pred": "date", "conf": 0.99, "latency": 0.9413049221038818, "raw": "{\"label\":\"date\",\"confidence\":0.99}", "method": "terra", "i": 42, "gold": "date", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.537519931793213, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 38, "gold": "oos", "correct": true}
+{"pred": "travel_notification", "conf": 0.99, "latency": 1.5022199153900146, "raw": "{\"label\":\"travel_notification\",\"confidence\":0.99}", "method": "terra", "i": 39, "gold": "travel_notification", "correct": true}
+{"pred": "order_status", "conf": 0.99, "latency": 2.02957820892334, "raw": "{\"label\":\"order_status\",\"confidence\":0.99}", "method": "terra", "i": 40, "gold": "order_status", "correct": true}
+{"pred": "book_flight", "conf": 0.99, "latency": 1.2115767002105713, "raw": "{\"label\":\"book_flight\",\"confidence\":0.99}", "method": "terra", "i": 43, "gold": "book_flight", "correct": true}
+{"pred": "damaged_card", "conf": 0.99, "latency": 1.1511919498443604, "raw": "{\"label\":\"damaged_card\",\"confidence\":0.99}", "method": "terra", "i": 44, "gold": "damaged_card", "correct": true}
+{"pred": "insurance_change", "conf": 0.93, "latency": 1.107658863067627, "raw": "{\"label\":\"insurance_change\",\"confidence\":0.93}", "method": "terra", "i": 45, "gold": "insurance_change", "correct": true}
+{"pred": "international_visa", "conf": 0.98, "latency": 1.3009588718414307, "raw": "{\"label\":\"international_visa\",\"confidence\":0.98}", "method": "terra", "i": 46, "gold": "international_visa", "correct": true}
+{"pred": "freeze_account", "conf": 0.98, "latency": 1.0246779918670654, "raw": "{\"label\":\"freeze_account\",\"confidence\":0.98}", "method": "terra", "i": 49, "gold": "freeze_account", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.2759888172149658, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 47, "gold": "oos", "correct": true}
+{"pred": "fun_fact", "conf": 0.76, "latency": 9.418224096298218, "raw": "{\"label\":\"fun_fact\",\"confidence\":0.76}", "method": "terra", "i": 21, "gold": "oos", "correct": false}
+{"pred": "reminder", "conf": 0.93, "latency": 1.1317858695983887, "raw": "{\"label\":\"reminder\",\"confidence\":0.93}", "method": "terra", "i": 50, "gold": "reminder", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 2.2027411460876465, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 48, "gold": "oos", "correct": true}
+{"pred": "restaurant_reviews", "conf": 0.99, "latency": 1.0574977397918701, "raw": "{\"label\":\"restaurant_reviews\",\"confidence\":0.99}", "method": "terra", "i": 52, "gold": "restaurant_reviews", "correct": true}
+{"pred": "oos", "conf": 0.88, "latency": 1.8309080600738525, "raw": "{\"label\":\"oos\",\"confidence\":0.88}", "method": "terra", "i": 51, "gold": "oos", "correct": true}
+{"pred": "tell_joke", "conf": 0.98, "latency": 0.8437738418579102, "raw": "{\"label\":\"tell_joke\",\"confidence\":0.98}", "method": "terra", "i": 56, "gold": "tell_joke", "correct": true}
+{"pred": "next_song", "conf": 0.99, "latency": 1.1153640747070312, "raw": "{\"label\":\"next_song\",\"confidence\":0.99}", "method": "terra", "i": 53, "gold": "next_song", "correct": true}
+{"pred": "update_playlist", "conf": 0.99, "latency": 1.0238111019134521, "raw": "{\"label\":\"update_playlist\",\"confidence\":0.99}", "method": "terra", "i": 55, "gold": "update_playlist", "correct": true}
+{"pred": "who_do_you_work_for", "conf": 0.98, "latency": 1.5092339515686035, "raw": "{\"label\":\"who_do_you_work_for\",\"confidence\":0.98}", "method": "terra", "i": 54, "gold": "who_do_you_work_for", "correct": true}
+{"pred": "oos", "conf": 0.98, "latency": 1.350217342376709, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 57, "gold": "oos", "correct": true}
+{"pred": "do_you_have_pets", "conf": 0.88, "latency": 1.0843157768249512, "raw": "{\"label\":\"do_you_have_pets\",\"confidence\":0.88}", "method": "terra", "i": 59, "gold": "do_you_have_pets", "correct": true}
+{"pred": "change_speed", "conf": 0.99, "latency": 1.243530035018921, "raw": "{\"label\":\"change_speed\",\"confidence\":0.99}", "method": "terra", "i": 58, "gold": "change_speed", "correct": true}
+{"pred": "bill_due", "conf": 0.99, "latency": 1.3789491653442383, "raw": "{\"label\":\"bill_due\",\"confidence\":0.99}", "method": "terra", "i": 60, "gold": "bill_due", "correct": true}
+{"pred": "oos", "conf": 0.98, "latency": 1.4229278564453125, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 61, "gold": "oos", "correct": true}
+{"pred": "cancel_reservation", "conf": 0.99, "latency": 0.9995038509368896, "raw": "{\"label\":\"cancel_reservation\",\"confidence\":0.99}", "method": "terra", "i": 63, "gold": "cancel_reservation", "correct": true}
+{"pred": "current_location", "conf": 0.99, "latency": 1.202538013458252, "raw": "{\"label\":\"current_location\",\"confidence\":0.99}", "method": "terra", "i": 64, "gold": "current_location", "correct": true}
+{"pred": "update_playlist", "conf": 0.98, "latency": 1.517683982849121, "raw": "{\"label\":\"update_playlist\",\"confidence\":0.98}", "method": "terra", "i": 62, "gold": "update_playlist", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.425306797027588, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 65, "gold": "oos", "correct": true}
+{"pred": "improve_credit_score", "conf": 0.99, "latency": 1.1198742389678955, "raw": "{\"label\":\"improve_credit_score\",\"confidence\":0.99}", "method": "terra", "i": 66, "gold": "improve_credit_score", "correct": true}
+{"pred": "play_music", "conf": 0.99, "latency": 1.048900842666626, "raw": "{\"label\":\"play_music\",\"confidence\":0.99}", "method": "terra", "i": 67, "gold": "play_music", "correct": true}
+{"pred": "roll_dice", "conf": 0.99, "latency": 1.1878700256347656, "raw": "{\"label\":\"roll_dice\",\"confidence\":0.99}", "method": "terra", "i": 68, "gold": "roll_dice", "correct": true}
+{"pred": "international_visa", "conf": 0.99, "latency": 1.2743370532989502, "raw": "{\"label\":\"international_visa\",\"confidence\":0.99}", "method": "terra", "i": 70, "gold": "international_visa", "correct": true}
+{"pred": "min_payment", "conf": 0.93, "latency": 1.8696417808532715, "raw": "{\"label\":\"min_payment\",\"confidence\":0.93}", "method": "terra", "i": 69, "gold": "min_payment", "correct": true}
+{"pred": "travel_suggestion", "conf": 0.99, "latency": 1.456484317779541, "raw": "{\"label\":\"travel_suggestion\",\"confidence\":0.99}", "method": "terra", "i": 72, "gold": "travel_suggestion", "correct": true}
+{"pred": "oos", "conf": 0.98, "latency": 2.014314889907837, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 71, "gold": "oos", "correct": true}
+{"pred": "last_maintenance", "conf": 0.98, "latency": 1.5390632152557373, "raw": "{\"label\":\"last_maintenance\",\"confidence\":0.98}", "method": "terra", "i": 73, "gold": "last_maintenance", "correct": true}
+{"pred": "card_declined", "conf": 0.9, "latency": 1.3748981952667236, "raw": "{\"label\":\"card_declined\",\"confidence\":0.9}", "method": "terra", "i": 74, "gold": "card_declined", "correct": true}
+{"pred": "oil_change_how", "conf": 0.99, "latency": 1.2802720069885254, "raw": "{\"label\":\"oil_change_how\",\"confidence\":0.99}", "method": "terra", "i": 76, "gold": "oil_change_how", "correct": true}
+{"pred": "reset_settings", "conf": 0.99, "latency": 0.9992451667785645, "raw": "{\"label\":\"reset_settings\",\"confidence\":0.99}", "method": "terra", "i": 77, "gold": "reset_settings", "correct": true}
+{"pred": "ingredients_list", "conf": 0.98, "latency": 1.6557350158691406, "raw": "{\"label\":\"ingredients_list\",\"confidence\":0.98}", "method": "terra", "i": 75, "gold": "ingredients_list", "correct": true}
+{"pred": "tell_joke", "conf": 0.99, "latency": 1.2671968936920166, "raw": "{\"label\":\"tell_joke\",\"confidence\":0.99}", "method": "terra", "i": 79, "gold": "tell_joke", "correct": true}
+{"pred": "who_made_you", "conf": 0.99, "latency": 1.049213171005249, "raw": "{\"label\":\"who_made_you\",\"confidence\":0.99}", "method": "terra", "i": 80, "gold": "who_made_you", "correct": true}
+{"pred": "mpg", "conf": 0.99, "latency": 1.1020522117614746, "raw": "{\"label\":\"mpg\",\"confidence\":0.99}", "method": "terra", "i": 81, "gold": "mpg", "correct": true}
+{"pred": "jump_start", "conf": 0.99, "latency": 1.0618398189544678, "raw": "{\"label\":\"jump_start\",\"confidence\":0.99}", "method": "terra", "i": 82, "gold": "jump_start", "correct": true}
+{"pred": "oos", "conf": 0.88, "latency": 2.2947189807891846, "raw": "{\"label\":\"oos\",\"confidence\":0.88}", "method": "terra", "i": 78, "gold": "oos", "correct": true}
+{"pred": "current_location", "conf": 0.98, "latency": 1.2613623142242432, "raw": "{\"label\":\"current_location\",\"confidence\":0.98}", "method": "terra", "i": 83, "gold": "current_location", "correct": true}
+{"pred": "meeting_schedule", "conf": 0.98, "latency": 1.137770175933838, "raw": "{\"label\":\"meeting_schedule\",\"confidence\":0.98}", "method": "terra", "i": 84, "gold": "meeting_schedule", "correct": true}
+{"pred": "are_you_a_bot", "conf": 0.99, "latency": 1.0067138671875, "raw": "{\"label\":\"are_you_a_bot\",\"confidence\":0.99}", "method": "terra", "i": 85, "gold": "are_you_a_bot", "correct": true}
+{"pred": "bill_balance", "conf": 0.93, "latency": 1.4411771297454834, "raw": "{\"label\":\"bill_balance\",\"confidence\":0.93}", "method": "terra", "i": 87, "gold": "bill_balance", "correct": true}
+{"pred": "travel_notification", "conf": 0.93, "latency": 14.414461851119995, "raw": "{\"label\":\"travel_notification\",\"confidence\":0.93}", "method": "terra", "i": 41, "gold": "travel_notification", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 0.9799909591674805, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 90, "gold": "oos", "correct": true}
+{"pred": "gas_type", "conf": 0.99, "latency": 0.9962921142578125, "raw": "{\"label\":\"gas_type\",\"confidence\":0.99}", "method": "terra", "i": 89, "gold": "gas_type", "correct": true}
+{"pred": "change_language", "conf": 0.99, "latency": 1.1724939346313477, "raw": "{\"label\":\"change_language\",\"confidence\":0.99}", "method": "terra", "i": 88, "gold": "change_language", "correct": true}
+{"pred": "current_location", "conf": 0.99, "latency": 0.947861909866333, "raw": "{\"label\":\"current_location\",\"confidence\":0.99}", "method": "terra", "i": 93, "gold": "current_location", "correct": true}
+{"pred": "oos", "conf": 0.98, "latency": 1.2658278942108154, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 92, "gold": "oos", "correct": true}
+{"pred": "pto_request", "conf": 0.99, "latency": 3.140320062637329, "raw": "{\"label\":\"pto_request\",\"confidence\":0.99}", "method": "terra", "i": 86, "gold": "pto_request", "correct": true}
+{"pred": "cancel_reservation", "conf": 0.99, "latency": 0.7789909839630127, "raw": "{\"label\":\"cancel_reservation\",\"confidence\":0.99}", "method": "terra", "i": 97, "gold": "cancel_reservation", "correct": true}
+{"pred": "yes", "conf": 0.99, "latency": 1.2584059238433838, "raw": "{\"label\":\"yes\",\"confidence\":0.99}", "method": "terra", "i": 96, "gold": "yes", "correct": true}
+{"pred": "pto_used", "conf": 0.99, "latency": 1.1333341598510742, "raw": "{\"label\":\"pto_used\",\"confidence\":0.99}", "method": "terra", "i": 98, "gold": "pto_used", "correct": true}
+{"pred": "oos", "conf": 0.84, "latency": 2.712294816970825, "raw": "{\"label\":\"oos\",\"confidence\":0.84}", "method": "terra", "i": 91, "gold": "oos", "correct": true}
+{"pred": "yes", "conf": 0.82, "latency": 2.5628409385681152, "raw": "{\"label\":\"yes\",\"confidence\":0.82}", "method": "terra", "i": 95, "gold": "yes", "correct": true}
+{"pred": "apr", "conf": 0.99, "latency": 1.016714096069336, "raw": "{\"label\":\"apr\",\"confidence\":0.99}", "method": "terra", "i": 100, "gold": "apr", "correct": true}
+{"pred": "traffic", "conf": 0.99, "latency": 0.8809928894042969, "raw": "{\"label\":\"traffic\",\"confidence\":0.99}", "method": "terra", "i": 101, "gold": "traffic", "correct": true}
+{"pred": "card_declined", "conf": 0.98, "latency": 1.166666030883789, "raw": "{\"label\":\"card_declined\",\"confidence\":0.98}", "method": "terra", "i": 102, "gold": "card_declined", "correct": true}
+{"pred": "travel_notification", "conf": 0.99, "latency": 0.9653682708740234, "raw": "{\"label\":\"travel_notification\",\"confidence\":0.99}", "method": "terra", "i": 103, "gold": "travel_notification", "correct": true}
+{"pred": "definition", "conf": 0.99, "latency": 2.1189088821411133, "raw": "{\"label\":\"definition\",\"confidence\":0.99}", "method": "terra", "i": 99, "gold": "definition", "correct": true}
+{"pred": "how_old_are_you", "conf": 0.99, "latency": 1.2172410488128662, "raw": "{\"label\":\"how_old_are_you\",\"confidence\":0.99}", "method": "terra", "i": 105, "gold": "how_old_are_you", "correct": true}
+{"pred": "min_payment", "conf": 0.97, "latency": 1.2874319553375244, "raw": "{\"label\":\"min_payment\",\"confidence\":0.97}", "method": "terra", "i": 104, "gold": "min_payment", "correct": true}
+{"pred": "goodbye", "conf": 0.99, "latency": 0.8302431106567383, "raw": "{\"label\":\"goodbye\",\"confidence\":0.99}", "method": "terra", "i": 108, "gold": "goodbye", "correct": true}
+{"pred": "alarm", "conf": 0.99, "latency": 0.9575119018554688, "raw": "{\"label\":\"alarm\",\"confidence\":0.99}", "method": "terra", "i": 110, "gold": "alarm", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 2.025663137435913, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 107, "gold": "oos", "correct": true}
+{"pred": "book_flight", "conf": 0.98, "latency": 1.4451649188995361, "raw": "{\"label\":\"book_flight\",\"confidence\":0.98}", "method": "terra", "i": 109, "gold": "book_flight", "correct": true}
+{"pred": "accept_reservations", "conf": 0.86, "latency": 2.314094066619873, "raw": "{\"label\":\"accept_reservations\",\"confidence\":0.86}", "method": "terra", "i": 106, "gold": "accept_reservations", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 1.8511219024658203, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 111, "gold": "oos", "correct": true}
+{"pred": "measurement_conversion", "conf": 0.99, "latency": 0.84214186668396, "raw": "{\"label\":\"measurement_conversion\",\"confidence\":0.99}", "method": "terra", "i": 115, "gold": "measurement_conversion", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.3518469333648682, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 113, "gold": "oos", "correct": true}
+{"pred": "transfer", "conf": 0.99, "latency": 1.1436021327972412, "raw": "{\"label\":\"transfer\",\"confidence\":0.99}", "method": "terra", "i": 114, "gold": "transfer", "correct": true}
+{"pred": "card_declined", "conf": 0.96, "latency": 1.682539939880371, "raw": "{\"label\":\"card_declined\",\"confidence\":0.96}", "method": "terra", "i": 112, "gold": "card_declined", "correct": true}
+{"pred": "car_rental", "conf": 0.99, "latency": 1.0406570434570312, "raw": "{\"label\":\"car_rental\",\"confidence\":0.99}", "method": "terra", "i": 118, "gold": "car_rental", "correct": true}
+{"pred": "restaurant_suggestion", "conf": 0.98, "latency": 1.2918767929077148, "raw": "{\"label\":\"restaurant_suggestion\",\"confidence\":0.98}", "method": "terra", "i": 117, "gold": "restaurant_suggestion", "correct": true}
+{"pred": "improve_credit_score", "conf": 0.71, "latency": 8.100738048553467, "raw": "{\"label\":\"improve_credit_score\",\"confidence\":0.71}", "method": "terra", "i": 94, "gold": "oos", "correct": false}
+{"pred": "calendar", "conf": 0.98, "latency": 1.1573512554168701, "raw": "{\"label\":\"calendar\",\"confidence\":0.98}", "method": "terra", "i": 120, "gold": "calendar", "correct": true}
+{"pred": "change_ai_name", "conf": 0.99, "latency": 1.686556100845337, "raw": "{\"label\":\"change_ai_name\",\"confidence\":0.99}", "method": "terra", "i": 116, "gold": "change_ai_name", "correct": true}
+{"pred": "oos", "conf": 0.98, "latency": 1.3103282451629639, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 119, "gold": "oos", "correct": true}
+{"pred": "play_music", "conf": 0.99, "latency": 0.7783401012420654, "raw": "{\"label\":\"play_music\",\"confidence\":0.99}", "method": "terra", "i": 123, "gold": "play_music", "correct": true}
+{"pred": "application_status", "conf": 0.99, "latency": 1.0321240425109863, "raw": "{\"label\":\"application_status\",\"confidence\":0.99}", "method": "terra", "i": 122, "gold": "application_status", "correct": true}
+{"pred": "gas", "conf": 0.99, "latency": 1.3167541027069092, "raw": "{\"label\":\"gas\",\"confidence\":0.99}", "method": "terra", "i": 121, "gold": "directions", "correct": false}
+{"pred": "international_fees", "conf": 0.99, "latency": 1.1683287620544434, "raw": "{\"label\":\"international_fees\",\"confidence\":0.99}", "method": "terra", "i": 124, "gold": "international_fees", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 1.4376211166381836, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 125, "gold": "oos", "correct": true}
+{"pred": "apr", "conf": 0.99, "latency": 0.9175951480865479, "raw": "{\"label\":\"apr\",\"confidence\":0.99}", "method": "terra", "i": 127, "gold": "apr", "correct": true}
+{"pred": "cancel_reservation", "conf": 0.99, "latency": 0.9016478061676025, "raw": "{\"label\":\"cancel_reservation\",\"confidence\":0.99}", "method": "terra", "i": 128, "gold": "cancel_reservation", "correct": true}
+{"pred": "translate", "conf": 0.99, "latency": 0.7229330539703369, "raw": "{\"label\":\"translate\",\"confidence\":0.99}", "method": "terra", "i": 133, "gold": "translate", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 2.457044839859009, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 126, "gold": "oos", "correct": true}
+{"pred": "calendar_update", "conf": 0.99, "latency": 1.502715826034546, "raw": "{\"label\":\"calendar_update\",\"confidence\":0.99}", "method": "terra", "i": 130, "gold": "calendar_update", "correct": true}
+{"pred": "order_status", "conf": 0.93, "latency": 1.5493388175964355, "raw": "{\"label\":\"order_status\",\"confidence\":0.93}", "method": "terra", "i": 132, "gold": "order_status", "correct": true}
+{"pred": "change_volume", "conf": 0.72, "latency": 2.2132771015167236, "raw": "{\"label\":\"change_volume\",\"confidence\":0.72}", "method": "terra", "i": 129, "gold": "cancel", "correct": false}
+{"pred": "account_blocked", "conf": 0.86, "latency": 1.8595120906829834, "raw": "{\"label\":\"account_blocked\",\"confidence\":0.86}", "method": "terra", "i": 131, "gold": "account_blocked", "correct": true}
+{"pred": "traffic", "conf": 0.99, "latency": 0.977583646774292, "raw": "{\"label\":\"traffic\",\"confidence\":0.99}", "method": "terra", "i": 134, "gold": "traffic", "correct": true}
+{"pred": "traffic", "conf": 0.99, "latency": 0.893082857131958, "raw": "{\"label\":\"traffic\",\"confidence\":0.99}", "method": "terra", "i": 135, "gold": "traffic", "correct": true}
+{"pred": "oos", "conf": 0.98, "latency": 1.136537790298462, "raw": "{\"label\":\"oos\",\"confidence\":0.98}", "method": "terra", "i": 136, "gold": "oos", "correct": true}
+{"pred": "weather", "conf": 0.99, "latency": 1.3188347816467285, "raw": "{\"label\":\"weather\",\"confidence\":0.99}", "method": "terra", "i": 137, "gold": "oos", "correct": false}
+{"pred": "oos", "conf": 0.99, "latency": 1.396986961364746, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 140, "gold": "oos", "correct": true}
+{"pred": "travel_alert", "conf": 0.99, "latency": 1.4984138011932373, "raw": "{\"label\":\"travel_alert\",\"confidence\":0.99}", "method": "terra", "i": 141, "gold": "travel_alert", "correct": true}
+{"pred": "oos", "conf": 0.78, "latency": 1.9013922214508057, "raw": "{\"label\":\"oos\",\"confidence\":0.78}", "method": "terra", "i": 138, "gold": "who_do_you_work_for", "correct": false}
+{"pred": "book_flight", "conf": 0.99, "latency": 1.9144539833068848, "raw": "{\"label\":\"book_flight\",\"confidence\":0.99}", "method": "terra", "i": 139, "gold": "book_flight", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.4302418231964111, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 143, "gold": "oos", "correct": true}
+{"pred": "insurance", "conf": 0.94, "latency": 1.239542007446289, "raw": "{\"label\":\"insurance\",\"confidence\":0.94}", "method": "terra", "i": 144, "gold": "insurance", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 1.4564170837402344, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 145, "gold": "oos", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.215144157409668, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 146, "gold": "oos", "correct": true}
+{"pred": "schedule_maintenance", "conf": 0.86, "latency": 2.8322041034698486, "raw": "{\"label\":\"schedule_maintenance\",\"confidence\":0.86}", "method": "terra", "i": 142, "gold": "schedule_maintenance", "correct": true}
+{"pred": "todo_list_update", "conf": 0.99, "latency": 1.4756920337677002, "raw": "{\"label\":\"todo_list_update\",\"confidence\":0.99}", "method": "terra", "i": 147, "gold": "todo_list_update", "correct": true}
+{"pred": "balance", "conf": 0.78, "latency": 1.3546569347381592, "raw": "{\"label\":\"balance\",\"confidence\":0.78}", "method": "terra", "i": 148, "gold": "balance", "correct": true}
+{"pred": "reminder", "conf": 0.99, "latency": 0.8413691520690918, "raw": "{\"label\":\"reminder\",\"confidence\":0.99}", "method": "terra", "i": 150, "gold": "reminder_update", "correct": false}
+{"pred": "oos", "conf": 0.99, "latency": 1.2326319217681885, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 149, "gold": "oos", "correct": true}
+{"pred": "where_are_you_from", "conf": 0.99, "latency": 0.983814001083374, "raw": "{\"label\":\"where_are_you_from\",\"confidence\":0.99}", "method": "terra", "i": 152, "gold": "where_are_you_from", "correct": true}
+{"pred": "pto_request", "conf": 0.98, "latency": 1.2287039756774902, "raw": "{\"label\":\"pto_request\",\"confidence\":0.98}", "method": "terra", "i": 151, "gold": "pto_request", "correct": true}
+{"pred": "maybe", "conf": 0.99, "latency": 1.1476011276245117, "raw": "{\"label\":\"maybe\",\"confidence\":0.99}", "method": "terra", "i": 153, "gold": "maybe", "correct": true}
+{"pred": "definition", "conf": 0.99, "latency": 0.9761559963226318, "raw": "{\"label\":\"definition\",\"confidence\":0.99}", "method": "terra", "i": 156, "gold": "definition", "correct": true}
+{"pred": "meaning_of_life", "conf": 0.99, "latency": 1.126244068145752, "raw": "{\"label\":\"meaning_of_life\",\"confidence\":0.99}", "method": "terra", "i": 154, "gold": "meaning_of_life", "correct": true}
+{"pred": "credit_limit_change", "conf": 0.99, "latency": 1.1356778144836426, "raw": "{\"label\":\"credit_limit_change\",\"confidence\":0.99}", "method": "terra", "i": 155, "gold": "credit_limit_change", "correct": true}
+{"pred": "w2", "conf": 0.99, "latency": 1.1872429847717285, "raw": "{\"label\":\"w2\",\"confidence\":0.99}", "method": "terra", "i": 157, "gold": "w2", "correct": true}
+{"pred": "cook_time", "conf": 0.96, "latency": 1.314176082611084, "raw": "{\"label\":\"cook_time\",\"confidence\":0.96}", "method": "terra", "i": 158, "gold": "cook_time", "correct": true}
+{"pred": "alarm", "conf": 0.99, "latency": 1.1171538829803467, "raw": "{\"label\":\"alarm\",\"confidence\":0.99}", "method": "terra", "i": 159, "gold": "alarm", "correct": true}
+{"pred": "reminder", "conf": 0.93, "latency": 0.8233489990234375, "raw": "{\"label\":\"reminder\",\"confidence\":0.93}", "method": "terra", "i": 162, "gold": "reminder", "correct": true}
+{"pred": "oos", "conf": 0.99, "latency": 1.0992989540100098, "raw": "{\"label\":\"oos\",\"confidence\":0.99}", "method": "terra", "i": 161, "gold": "oos", "correct": true}
+{"pred": "who_made_you", "conf": 0.78, "latency": 1.584702968597412, "raw": "{\"label\":\"who_made_you\",\"confidence\":0.78}", "method": "terra", "i": 160, "gold": "who_made_you", "correct": true}
+{"pred": "order_status", "conf": 0.99, "latency": 1.036712884902954, "raw": "{\"label\":\"order_status\",\"confidence\":0.99}", "method": "terra", "i": 163, "gold": "order_status", "correct": true}
+{"pred": "damaged_card", "conf": 0.99, "latency": 1.0422589778900146, "raw": "{\"label\":\"damaged_card\",\"confidence\":0.99}", "method": "terra", "i": 164, "gold": "damaged_card", "correct": true}
+{"pred": "change_user_name", "conf": 0.99, "latency": 1.1024267673492432, "raw": "{\"label\":\"change_user_name\",\"confidence\":0.99}", "method": "terra", "i": 165, "gold": "change_user_name", "correct": true}
+{"pred": "oil_change_when", "conf": 0.98, "latency": 1.0037178993225098, "raw": "{\"label\":\"oil_change_when\",\"confidence\":0.98}", "method": "terra", "i": 166, "gold": "oil_change_when", "correct": true}
+{"pred": "reminder", "conf": 0.99, "latency": 0.7020077705383301, "raw": "{\"label\":\"reminder\",\"confidence\":0.99}", "method": "terra", "i": 168, "gold": "reminder_update", "correct": false}
+{"pred": "repeat", "conf": 0.99, "latency": 1.3796701431274414, "raw": "{\"label\":\"repeat\",\"confidence\":0.99}", "method": "terra", "i": 167, "gold": "repeat", "correct": true}
+{"pred": "recipe", "conf": 0.91, "latency": 1.1149671077728271, "raw": "{\"label\":\"recipe\",\"confidence\":0.91}", "method": "terra", "i": 169, "gold": "recipe", "correct": true}
+{"pred": "oil_change_when", "conf": 0.98, "latency": 1.0119960308074951, "raw": "{\"label\":\"oil_change_when\",\"confidence\":0.98}", "method": "terra", "i": 170, "gold": "oil_change_when", "correct": true}
+{"pred": "todo_list", "conf": 0.99, "latency": 1.0178377628326416, "raw": "{\"label\":\"todo_list\",\"confidence\":0.99}", "method": "terra", "i": 172, "gold": "todo_list", "correct": true}
+{"pred": "make_call", "conf": 0.78, "latency": 1.373905897140503, "raw": "{\"label\":\"make_call\",\"confidence\":0.78}", "method": "terra", "i": 171, "gold": "oos", "correct": false}
+{"pred": "restaurant_reviews", "conf": 0.99, "latency": 1.2699999809265137, "raw": "{\"label\":\"restaurant_reviews\",\"confidence\":0.99}", "method": "terra", "i": 174, "gold": "restaurant_reviews", "correct": true}
+{"pred": "expiration_date", "conf": 0.98, "latency": 0.8467588424682617, "raw": "{\"label\":\"expiration_date\",\"confidence\":0.98}", "method": "terra", "i": 177, "gold": "expiration_date", "correct": true}
+{"pred": "exchange_rate", "conf": 0.98, "latency": 1.1037368774414062, "raw": "{\"label\":\"exchange_rate\",\"confidence\":0.98}", "method": "terra", "i": 176, "gold": "exchange_rate", "correct": true}
+{"pred": "current_location", "conf": 0.99, "latency": 0.7426559925079346, "raw": "{\"label\":\"current_location\",\"confidence\":0.99}", "method": "terra", "i": 178, "gold": "share_location", "correct": false}
+{"pred": "what_are_your_hobbies", "conf": 0.99, "latency": 1.289167881011963, "raw": "{\"label\":\"what_are_your_hobbies\",\"confidence\":0.99}", "method": "terra", "i": 175, "gold": "what_are_your_hobbies", "correct": true}
+{"pred": "user_name", "conf": 0.98, "latency": 0.9274661540985107, "raw": "{\"label\":\"user_name\",\"confidence\":0.98}", "method": "terra", "i": 179, "gold": "user_name", "correct": true}
+{"pred": "find_phone", "conf": 0.98, "latency": 1.0555830001831055, "raw": "{\"label\":\"find_phone\",\"confidence\":0.98}", "method": "terra", "i": 180, "gold": "find_phone", "correct": true}
+{"pred": "plug_type", "conf": 0.98, "latency": 1.0474140644073486, "raw": "{\"label\":\"plug_type\",\"confidence\":0.98}", "method": "terra", "i": 181, "gold": "plug_type", "correct": true}
+{"pred": "accept_reservations", "conf": 0.98, "latency": 0.9700090885162354, "raw": "{\"label\":\"accept_reservations\",\"confidence\":0.98}", "method": "terra", "i": 183, "gold": "accept_reservations", "correct": true}
+{"pred": "weather", "conf": 0.93, "latency": 1.6802880764007568, "raw": "{\"label\":\"weather\",\"confidence\":0.93}", "method": "terra", "i": 182, "gold": "smart_home", "correct": false}
+{"pred": "vaccines", "conf": 0.98, "latency": 1.0130078792572021, "raw": "{\"label\":\"vaccines\",\"confidence\":0.98}", "method": "terra", "i": 184, "gold": "vaccines", "correct": true}
+{"pred": "change_speed", "conf": 0.99, "latency": 0.883173942565918, "raw": "{\"label\":\"change_speed\",\"confidence\":0.99}", "method": "terra", "i": 185, "gold": "change_speed", "correct": true}
+{"pred": "who_made_you", "conf": 0.99, "latency": 0.8565671443939209, "raw": "{\"label\":\"who_made_you\",\"confidence\":0.99}", "method": "terra", "i": 187, "gold": "who_made_you", "correct": true}
+{"pred": "report_lost_card", "conf": 0.99, "latency": 1.1632442474365234, "raw": "{\"label\":\"report_lost_card\",\"confidence\":0.99}", "method": "terra", "i": 186, "gold": "report_lost_card", "correct": true}
+{"pred": "uber", "conf": 0.99, "latency": 0.9200987815856934, "raw": "{\"label\":\"uber\",\"confidence\":0.99}", "method": "terra", "i": 190, "gold": "uber", "correct": true}
+{"pred": "change_ai_name", "conf": 0.99, "latency": 0.9827849864959717, "raw": "{\"label\":\"change_ai_name\",\"confidence\":0.99}", "method": "terra", "i": 189, "gold": "change_ai_name", "correct": true}
+{"pred": "reminder", "conf": 0.98, "latency": 1.212134838104248, "raw": "{\"label\":\"reminder\",\"confidence\":0.98}", "method": "terra", "i": 188, "gold": "reminder_update", "correct": false}
+{"pred": "vaccines", "conf": 0.99, "latency": 1.185682773590088, "raw": "{\"label\":\"vaccines\",\"confidence\":0.99}", "method": "terra", "i": 191, "gold": "oos", "correct": false}
+{"pred": "spelling", "conf": 0.99, "latency": 1.1641647815704346, "raw": "{\"label\":\"spelling\",\"confidence\":0.99}", "method": "terra", "i": 192, "gold": "spelling", "correct": true}
+{"pred": "insurance", "conf": 0.98, "latency": 1.2258038520812988, "raw": "{\"label\":\"insurance\",\"confidence\":0.98}", "method": "terra", "i": 193, "gold": "insurance_change", "correct": false}
+{"pred": "meaning_of_life", "conf": 0.99, "latency": 1.0602738857269287, "raw": "{\"label\":\"meaning_of_life\",\"confidence\":0.99}", "method": "terra", "i": 195, "gold": "meaning_of_life", "correct": true}
+{"pred": "weather", "conf": 0.99, "latency": 0.8813338279724121, "raw": "{\"label\":\"weather\",\"confidence\":0.99}", "method": "terra", "i": 196, "gold": "weather", "correct": true}
+{"pred": "pto_used", "conf": 0.98, "latency": 1.4422779083251953, "raw": "{\"label\":\"pto_used\",\"confidence\":0.98}", "method": "terra", "i": 194, "gold": "pto_used", "correct": true}
+{"pred": "pto_request_status", "conf": 0.98, "latency": 1.188126802444458, "raw": "{\"label\":\"pto_request_status\",\"confidence\":0.98}", "method": "terra", "i": 197, "gold": "pto_request_status", "correct": true}
+{"pred": "improve_credit_score", "conf": 0.99, "latency": 0.8031101226806641, "raw": "{\"label\":\"improve_credit_score\",\"confidence\":0.99}", "method": "terra", "i": 198, "gold": "improve_credit_score", "correct": true}
+{"pred": "repeat", "conf": 0.99, "latency": 1.0243537425994873, "raw": "{\"label\":\"repeat\",\"confidence\":0.99}", "method": "terra", "i": 199, "gold": "repeat", "correct": true}
+{"pred": "oos", "conf": 0.93, "latency": 15.409390926361084, "raw": "{\"label\":\"oos\",\"confidence\":0.93}", "method": "terra", "i": 173, "gold": "oos", "correct": true}
+{"pred": "expiration_date", "conf": 1, "latency": 0.5770571231842041, "cost": 0.000105714, "method": "jev", "i": 5, "gold": "expiration_date", "correct": true, "attempts": 11}
+{"pred": "interest_rate", "conf": 1, "latency": 0.4235689640045166, "cost": 0.00010563, "method": "jev", "i": 6, "gold": "interest_rate", "correct": true, "attempts": 1}
+{"pred": "bill_balance", "conf": 0.89, "latency": 0.4172329902648926, "cost": 0.000105714, "method": "jev", "i": 7, "gold": "bill_balance", "correct": true, "attempts": 1}
+{"pred": "pto_request", "conf": 0.61, "latency": 0.3937671184539795, "cost": 0.00010584, "method": "jev", "i": 8, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "report_fraud", "conf": 1, "latency": 0.34465885162353516, "cost": 0.000105882, "method": "jev", "i": 9, "gold": "report_fraud", "correct": true, "attempts": 1}
+{"pred": "uber", "conf": 1, "latency": 0.5598070621490479, "cost": 0.000105756, "method": "jev", "i": 10, "gold": "uber", "correct": true, "attempts": 11}
+{"pred": "balance", "conf": 1, "latency": 0.34870195388793945, "cost": 0.000105798, "method": "jev", "i": 11, "gold": "balance", "correct": true, "attempts": 1}
+{"pred": "are_you_a_bot", "conf": 1, "latency": 0.32015395164489746, "cost": 0.000105714, "method": "jev", "i": 12, "gold": "are_you_a_bot", "correct": true, "attempts": 1}
+{"pred": "travel_alert", "conf": 1, "latency": 0.3329939842224121, "cost": 0.000105672, "method": "jev", "i": 13, "gold": "travel_alert", "correct": true, "attempts": 1}
+{"pred": "book_hotel", "conf": 1, "latency": 0.5918793678283691, "cost": 0.00010626, "method": "jev", "i": 14, "gold": "book_hotel", "correct": true, "attempts": 1}
+{"pred": "greeting", "conf": 1, "latency": 0.5264780521392822, "cost": 0.00010563, "method": "jev", "i": 15, "gold": "greeting", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.9, "latency": 0.4223318099975586, "cost": 0.000105714, "method": "jev", "i": 16, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "translate", "conf": 1, "latency": 0.3607749938964844, "cost": 0.000105672, "method": "jev", "i": 17, "gold": "translate", "correct": true, "attempts": 1}
+{"pred": "direct_deposit", "conf": 1, "latency": 0.4371967315673828, "cost": 0.000106134, "method": "jev", "i": 18, "gold": "direct_deposit", "correct": true, "attempts": 1}
+{"pred": "make_call", "conf": 1, "latency": 0.7166750431060791, "cost": 0.000105588, "method": "jev", "i": 19, "gold": "make_call", "correct": true, "attempts": 1}
+{"pred": "schedule_maintenance", "conf": 1, "latency": 0.5929532051086426, "cost": 0.000106008, "method": "jev", "i": 20, "gold": "schedule_maintenance", "correct": true, "attempts": 11}
+{"pred": "fun_fact", "conf": 0.78, "latency": 0.37882399559020996, "cost": 0.00010563, "method": "jev", "i": 21, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "freeze_account", "conf": 1, "latency": 0.5934438705444336, "cost": 0.00010563, "method": "jev", "i": 22, "gold": "freeze_account", "correct": true, "attempts": 1}
+{"pred": "tire_change", "conf": 0.85, "latency": 0.49753332138061523, "cost": 0.000105882, "method": "jev", "i": 23, "gold": "tire_change", "correct": true, "attempts": 1}
+{"pred": "pto_request", "conf": 1, "latency": 0.4044220447540283, "cost": 0.000105966, "method": "jev", "i": 24, "gold": "pto_request", "correct": true, "attempts": 1}
+{"pred": "find_phone", "conf": 1, "latency": 0.646630048751831, "cost": 0.000105672, "method": "jev", "i": 25, "gold": "find_phone", "correct": true, "attempts": 11}
+{"pred": "find_phone", "conf": 1, "latency": 0.331035852432251, "cost": 0.000105714, "method": "jev", "i": 26, "gold": "find_phone", "correct": true, "attempts": 1}
+{"pred": "directions", "conf": 0.48, "latency": 0.7157490253448486, "cost": 0.000105756, "method": "jev", "i": 27, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "traffic", "conf": 1, "latency": 0.4660041332244873, "cost": 0.000105714, "method": "jev", "i": 28, "gold": "traffic", "correct": true, "attempts": 1}
+{"pred": "timer", "conf": 1, "latency": 0.4152367115020752, "cost": 0.000105672, "method": "jev", "i": 29, "gold": "timer", "correct": true, "attempts": 1}
+{"pred": "measurement_conversion", "conf": 1, "latency": 0.565544843673706, "cost": 0.00010584, "method": "jev", "i": 30, "gold": "measurement_conversion", "correct": true, "attempts": 11}
+{"pred": "date", "conf": 0.98, "latency": 0.4449012279510498, "cost": 0.000105588, "method": "jev", "i": 31, "gold": "date", "correct": true, "attempts": 1}
+{"pred": "pto_balance", "conf": 1, "latency": 0.3898661136627197, "cost": 0.000105798, "method": "jev", "i": 32, "gold": "pto_balance", "correct": true, "attempts": 1}
+{"pred": "travel_alert", "conf": 0.98, "latency": 0.4369049072265625, "cost": 0.000105714, "method": "jev", "i": 33, "gold": "travel_alert", "correct": true, "attempts": 1}
+{"pred": "recipe", "conf": 0.99, "latency": 0.5190129280090332, "cost": 0.000105756, "method": "jev", "i": 34, "gold": "recipe", "correct": true, "attempts": 1}
+{"pred": "carry_on", "conf": 1, "latency": 0.6752521991729736, "cost": 0.00010605, "method": "jev", "i": 35, "gold": "carry_on", "correct": true, "attempts": 11}
+{"pred": "reset_settings", "conf": 0.98, "latency": 0.39596104621887207, "cost": 0.000105672, "method": "jev", "i": 36, "gold": "reset_settings", "correct": true, "attempts": 1}
+{"pred": "expiration_date", "conf": 1, "latency": 0.3372650146484375, "cost": 0.000105672, "method": "jev", "i": 37, "gold": "expiration_date", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.88, "latency": 0.5328640937805176, "cost": 0.000105756, "method": "jev", "i": 38, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "travel_notification", "conf": 0.94, "latency": 0.3378779888153076, "cost": 0.00010626, "method": "jev", "i": 39, "gold": "travel_notification", "correct": true, "attempts": 1}
+{"pred": "order_status", "conf": 1, "latency": 0.8079071044921875, "cost": 0.00010563, "method": "jev", "i": 40, "gold": "order_status", "correct": true, "attempts": 11}
+{"pred": "travel_notification", "conf": 0.92, "latency": 0.3919861316680908, "cost": 0.000105756, "method": "jev", "i": 41, "gold": "travel_notification", "correct": true, "attempts": 1}
+{"pred": "date", "conf": 1, "latency": 0.5001647472381592, "cost": 0.00010563, "method": "jev", "i": 42, "gold": "date", "correct": true, "attempts": 1}
+{"pred": "book_flight", "conf": 1, "latency": 0.38864803314208984, "cost": 0.000106092, "method": "jev", "i": 43, "gold": "book_flight", "correct": true, "attempts": 1}
+{"pred": "damaged_card", "conf": 1, "latency": 0.7351081371307373, "cost": 0.000105672, "method": "jev", "i": 44, "gold": "damaged_card", "correct": true, "attempts": 1}
+{"pred": "insurance_change", "conf": 0.65, "latency": 0.6340961456298828, "cost": 0.000105798, "method": "jev", "i": 45, "gold": "insurance_change", "correct": true, "attempts": 11}
+{"pred": "international_visa", "conf": 1, "latency": 0.2942976951599121, "cost": 0.000105966, "method": "jev", "i": 46, "gold": "international_visa", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.56, "latency": 0.3696460723876953, "cost": 0.00010584, "method": "jev", "i": 47, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.41, "latency": 0.45954012870788574, "cost": 0.000105672, "method": "jev", "i": 48, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "freeze_account", "conf": 0.97, "latency": 0.42352724075317383, "cost": 0.00010563, "method": "jev", "i": 49, "gold": "freeze_account", "correct": true, "attempts": 1}
+{"pred": "reminder", "conf": 0.72, "latency": 0.5329380035400391, "cost": 0.000106134, "method": "jev", "i": 50, "gold": "reminder", "correct": true, "attempts": 11}
+{"pred": "distance", "conf": 0.99, "latency": 0.3968498706817627, "cost": 0.000105924, "method": "jev", "i": 51, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "restaurant_reviews", "conf": 1, "latency": 0.4142179489135742, "cost": 0.000105672, "method": "jev", "i": 52, "gold": "restaurant_reviews", "correct": true, "attempts": 1}
+{"pred": "next_song", "conf": 0.99, "latency": 0.4835500717163086, "cost": 0.000105798, "method": "jev", "i": 53, "gold": "next_song", "correct": true, "attempts": 1}
+{"pred": "who_do_you_work_for", "conf": 0.99, "latency": 0.39261794090270996, "cost": 0.000105588, "method": "jev", "i": 54, "gold": "who_do_you_work_for", "correct": true, "attempts": 1}
+{"pred": "update_playlist", "conf": 1, "latency": 0.7897076606750488, "cost": 0.000105798, "method": "jev", "i": 55, "gold": "update_playlist", "correct": true, "attempts": 11}
+{"pred": "tell_joke", "conf": 0.71, "latency": 0.49443697929382324, "cost": 0.000105714, "method": "jev", "i": 56, "gold": "tell_joke", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.66, "latency": 0.3656959533691406, "cost": 0.000105588, "method": "jev", "i": 57, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "change_speed", "conf": 1, "latency": 0.4661099910736084, "cost": 0.000105588, "method": "jev", "i": 58, "gold": "change_speed", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.41, "latency": 0.34549880027770996, "cost": 0.00010563, "method": "jev", "i": 59, "gold": "do_you_have_pets", "correct": false, "attempts": 1}
+{"pred": "bill_due", "conf": 1, "latency": 0.5384202003479004, "cost": 0.000105798, "method": "jev", "i": 60, "gold": "bill_due", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.96, "latency": 0.35762810707092285, "cost": 0.000105588, "method": "jev", "i": 61, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "update_playlist", "conf": 0.99, "latency": 1.4332807064056396, "cost": 0.000105756, "method": "jev", "i": 62, "gold": "update_playlist", "correct": true, "attempts": 1}
+{"pred": "cancel_reservation", "conf": 0.99, "latency": 0.4457418918609619, "cost": 0.00010563, "method": "jev", "i": 63, "gold": "cancel_reservation", "correct": true, "attempts": 1}
+{"pred": "current_location", "conf": 1, "latency": 0.4171872138977051, "cost": 0.000105672, "method": "jev", "i": 64, "gold": "current_location", "correct": true, "attempts": 1}
+{"pred": "time", "conf": 0.48, "latency": 0.5615460872650146, "cost": 0.000105924, "method": "jev", "i": 65, "gold": "oos", "correct": false, "attempts": 11}
+{"pred": "improve_credit_score", "conf": 1, "latency": 0.36200618743896484, "cost": 0.000105798, "method": "jev", "i": 66, "gold": "improve_credit_score", "correct": true, "attempts": 1}
+{"pred": "play_music", "conf": 1, "latency": 0.3668830394744873, "cost": 0.00010563, "method": "jev", "i": 67, "gold": "play_music", "correct": true, "attempts": 1}
+{"pred": "roll_dice", "conf": 1, "latency": 0.4120948314666748, "cost": 0.00010563, "method": "jev", "i": 68, "gold": "roll_dice", "correct": true, "attempts": 1}
+{"pred": "min_payment", "conf": 0.93, "latency": 0.39626383781433105, "cost": 0.000105882, "method": "jev", "i": 69, "gold": "min_payment", "correct": true, "attempts": 1}
+{"pred": "international_visa", "conf": 1, "latency": 0.629906177520752, "cost": 0.000105924, "method": "jev", "i": 70, "gold": "international_visa", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.73, "latency": 0.46529102325439453, "cost": 0.000106008, "method": "jev", "i": 71, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "travel_suggestion", "conf": 1, "latency": 0.37579917907714844, "cost": 0.000105882, "method": "jev", "i": 72, "gold": "travel_suggestion", "correct": true, "attempts": 1}
+{"pred": "last_maintenance", "conf": 0.99, "latency": 0.48438501358032227, "cost": 0.00010584, "method": "jev", "i": 73, "gold": "last_maintenance", "correct": true, "attempts": 1}
+{"pred": "card_declined", "conf": 0.98, "latency": 1.233137845993042, "cost": 0.000105714, "method": "jev", "i": 74, "gold": "card_declined", "correct": true, "attempts": 1}
+{"pred": "ingredients_list", "conf": 0.96, "latency": 0.5839049816131592, "cost": 0.000105714, "method": "jev", "i": 75, "gold": "ingredients_list", "correct": true, "attempts": 11}
+{"pred": "oil_change_how", "conf": 1, "latency": 0.40642809867858887, "cost": 0.000105798, "method": "jev", "i": 76, "gold": "oil_change_how", "correct": true, "attempts": 1}
+{"pred": "reset_settings", "conf": 1, "latency": 0.557042121887207, "cost": 0.000105672, "method": "jev", "i": 77, "gold": "reset_settings", "correct": true, "attempts": 2}
+{"pred": "oos", "conf": 0.68, "latency": 0.42139196395874023, "cost": 0.000105882, "method": "jev", "i": 78, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "tell_joke", "conf": 1, "latency": 0.467144250869751, "cost": 0.000105714, "method": "jev", "i": 79, "gold": "tell_joke", "correct": true, "attempts": 10}
+{"pred": "who_made_you", "conf": 1, "latency": 0.4488101005554199, "cost": 0.00010563, "method": "jev", "i": 80, "gold": "who_made_you", "correct": true, "attempts": 1}
+{"pred": "mpg", "conf": 1, "latency": 0.34073901176452637, "cost": 0.000105798, "method": "jev", "i": 81, "gold": "mpg", "correct": true, "attempts": 1}
+{"pred": "jump_start", "conf": 1, "latency": 0.3661949634552002, "cost": 0.000105924, "method": "jev", "i": 82, "gold": "jump_start", "correct": true, "attempts": 1}
+{"pred": "current_location", "conf": 0.97, "latency": 0.38524293899536133, "cost": 0.00010563, "method": "jev", "i": 83, "gold": "current_location", "correct": true, "attempts": 1}
+{"pred": "meeting_schedule", "conf": 0.98, "latency": 0.7502310276031494, "cost": 0.000105756, "method": "jev", "i": 84, "gold": "meeting_schedule", "correct": true, "attempts": 11}
+{"pred": "are_you_a_bot", "conf": 1, "latency": 0.4334430694580078, "cost": 0.000105588, "method": "jev", "i": 85, "gold": "are_you_a_bot", "correct": true, "attempts": 1}
+{"pred": "pto_request", "conf": 1, "latency": 0.4912590980529785, "cost": 0.000105714, "method": "jev", "i": 86, "gold": "pto_request", "correct": true, "attempts": 1}
+{"pred": "bill_balance", "conf": 0.96, "latency": 0.3818643093109131, "cost": 0.00010584, "method": "jev", "i": 87, "gold": "bill_balance", "correct": true, "attempts": 1}
+{"pred": "change_language", "conf": 1, "latency": 0.4374377727508545, "cost": 0.000105588, "method": "jev", "i": 88, "gold": "change_language", "correct": true, "attempts": 1}
+{"pred": "gas_type", "conf": 1, "latency": 0.6160571575164795, "cost": 0.000105798, "method": "jev", "i": 89, "gold": "gas_type", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.92, "latency": 0.3263270854949951, "cost": 0.000105882, "method": "jev", "i": 90, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "directions", "conf": 0.68, "latency": 0.4061708450317383, "cost": 0.00010563, "method": "jev", "i": 91, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "oos", "conf": 0.91, "latency": 0.3965950012207031, "cost": 0.000105672, "method": "jev", "i": 92, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "current_location", "conf": 1, "latency": 0.37841296195983887, "cost": 0.000105546, "method": "jev", "i": 93, "gold": "current_location", "correct": true, "attempts": 1}
+{"pred": "improve_credit_score", "conf": 0.68, "latency": 0.5918540954589844, "cost": 0.000105798, "method": "jev", "i": 94, "gold": "oos", "correct": false, "attempts": 11}
+{"pred": "yes", "conf": 0.9, "latency": 0.4393301010131836, "cost": 0.00010542, "method": "jev", "i": 95, "gold": "yes", "correct": true, "attempts": 1}
+{"pred": "yes", "conf": 1, "latency": 0.3692619800567627, "cost": 0.000105672, "method": "jev", "i": 96, "gold": "yes", "correct": true, "attempts": 1}
+{"pred": "cancel_reservation", "conf": 0.99, "latency": 0.630605936050415, "cost": 0.000105924, "method": "jev", "i": 97, "gold": "cancel_reservation", "correct": true, "attempts": 1}
+{"pred": "pto_used", "conf": 0.99, "latency": 0.4228630065917969, "cost": 0.00010584, "method": "jev", "i": 98, "gold": "pto_used", "correct": true, "attempts": 1}
+{"pred": "definition", "conf": 1, "latency": 0.41135716438293457, "cost": 0.00010563, "method": "jev", "i": 99, "gold": "definition", "correct": true, "attempts": 11}
+{"pred": "apr", "conf": 1, "latency": 0.521273136138916, "cost": 0.000105756, "method": "jev", "i": 100, "gold": "apr", "correct": true, "attempts": 1}
+{"pred": "traffic", "conf": 1, "latency": 0.353687047958374, "cost": 0.000106176, "method": "jev", "i": 101, "gold": "traffic", "correct": true, "attempts": 1}
+{"pred": "card_declined", "conf": 1, "latency": 0.3828859329223633, "cost": 0.000105882, "method": "jev", "i": 102, "gold": "card_declined", "correct": true, "attempts": 1}
+{"pred": "travel_notification", "conf": 0.96, "latency": 0.3086080551147461, "cost": 0.000105924, "method": "jev", "i": 103, "gold": "travel_notification", "correct": true, "attempts": 1}
+{"pred": "min_payment", "conf": 0.92, "latency": 0.5817670822143555, "cost": 0.000105882, "method": "jev", "i": 104, "gold": "min_payment", "correct": true, "attempts": 11}
+{"pred": "how_old_are_you", "conf": 1, "latency": 0.375230073928833, "cost": 0.000105714, "method": "jev", "i": 105, "gold": "how_old_are_you", "correct": true, "attempts": 1}
+{"pred": "restaurant_reservation", "conf": 1, "latency": 0.46780991554260254, "cost": 0.000105714, "method": "jev", "i": 106, "gold": "accept_reservations", "correct": false, "attempts": 1}
+{"pred": "oos", "conf": 0.71, "latency": 0.37611818313598633, "cost": 0.000105672, "method": "jev", "i": 107, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "goodbye", "conf": 1, "latency": 0.47156786918640137, "cost": 0.000105588, "method": "jev", "i": 108, "gold": "goodbye", "correct": true, "attempts": 1}
+{"pred": "book_flight", "conf": 0.9, "latency": 0.532078742980957, "cost": 0.000106134, "method": "jev", "i": 109, "gold": "book_flight", "correct": true, "attempts": 11}
+{"pred": "alarm", "conf": 0.98, "latency": 0.36667490005493164, "cost": 0.000105756, "method": "jev", "i": 110, "gold": "alarm", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.6, "latency": 0.40517210960388184, "cost": 0.00010584, "method": "jev", "i": 111, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "card_declined", "conf": 0.98, "latency": 0.44952392578125, "cost": 0.000105966, "method": "jev", "i": 112, "gold": "card_declined", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.99, "latency": 0.39188504219055176, "cost": 0.000105798, "method": "jev", "i": 113, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "transfer", "conf": 1, "latency": 0.6928198337554932, "cost": 0.000105966, "method": "jev", "i": 114, "gold": "transfer", "correct": true, "attempts": 11}
+{"pred": "measurement_conversion", "conf": 1, "latency": 0.4650838375091553, "cost": 0.000105714, "method": "jev", "i": 115, "gold": "measurement_conversion", "correct": true, "attempts": 1}
+{"pred": "change_user_name", "conf": 0.81, "latency": 0.5679411888122559, "cost": 0.000105798, "method": "jev", "i": 116, "gold": "change_ai_name", "correct": false, "attempts": 1}
+{"pred": "restaurant_suggestion", "conf": 0.99, "latency": 0.3680000305175781, "cost": 0.000105882, "method": "jev", "i": 117, "gold": "restaurant_suggestion", "correct": true, "attempts": 1}
+{"pred": "car_rental", "conf": 1, "latency": 0.3637399673461914, "cost": 0.00010626, "method": "jev", "i": 118, "gold": "car_rental", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.66, "latency": 0.5123476982116699, "cost": 0.00010563, "method": "jev", "i": 119, "gold": "oos", "correct": true, "attempts": 11}
+{"pred": "calendar", "conf": 0.94, "latency": 0.3527557849884033, "cost": 0.000105924, "method": "jev", "i": 120, "gold": "calendar", "correct": true, "attempts": 1}
+{"pred": "gas", "conf": 0.94, "latency": 0.3848876953125, "cost": 0.00010584, "method": "jev", "i": 121, "gold": "directions", "correct": false, "attempts": 1}
+{"pred": "application_status", "conf": 1, "latency": 0.3857409954071045, "cost": 0.00010584, "method": "jev", "i": 122, "gold": "application_status", "correct": true, "attempts": 1}
+{"pred": "play_music", "conf": 1, "latency": 0.3728818893432617, "cost": 0.000105966, "method": "jev", "i": 123, "gold": "play_music", "correct": true, "attempts": 1}
+{"pred": "international_fees", "conf": 1, "latency": 0.5684070587158203, "cost": 0.000105798, "method": "jev", "i": 124, "gold": "international_fees", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.63, "latency": 0.36347508430480957, "cost": 0.000105798, "method": "jev", "i": 125, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.51, "latency": 0.3757660388946533, "cost": 0.000105462, "method": "jev", "i": 126, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "apr", "conf": 0.96, "latency": 0.31911611557006836, "cost": 0.000105714, "method": "jev", "i": 127, "gold": "apr", "correct": true, "attempts": 1}
+{"pred": "cancel_reservation", "conf": 0.99, "latency": 0.4097929000854492, "cost": 0.000105756, "method": "jev", "i": 128, "gold": "cancel_reservation", "correct": true, "attempts": 1}
+{"pred": "smart_home", "conf": 0.47, "latency": 0.6047852039337158, "cost": 0.000105588, "method": "jev", "i": 129, "gold": "cancel", "correct": false, "attempts": 11}
+{"pred": "calendar_update", "conf": 0.81, "latency": 0.35147976875305176, "cost": 0.000106092, "method": "jev", "i": 130, "gold": "calendar_update", "correct": true, "attempts": 1}
+{"pred": "account_blocked", "conf": 0.96, "latency": 0.45452427864074707, "cost": 0.000105756, "method": "jev", "i": 131, "gold": "account_blocked", "correct": true, "attempts": 1}
+{"pred": "order_status", "conf": 0.99, "latency": 0.4850349426269531, "cost": 0.000105588, "method": "jev", "i": 132, "gold": "order_status", "correct": true, "attempts": 1}
+{"pred": "translate", "conf": 1, "latency": 0.40938282012939453, "cost": 0.00010584, "method": "jev", "i": 133, "gold": "translate", "correct": true, "attempts": 1}
+{"pred": "traffic", "conf": 1, "latency": 0.935338020324707, "cost": 0.00010626, "method": "jev", "i": 134, "gold": "traffic", "correct": true, "attempts": 11}
+{"pred": "traffic", "conf": 0.99, "latency": 0.37601804733276367, "cost": 0.000106302, "method": "jev", "i": 135, "gold": "traffic", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.96, "latency": 0.3389110565185547, "cost": 0.000105756, "method": "jev", "i": 136, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "weather", "conf": 1, "latency": 0.5356950759887695, "cost": 0.000105672, "method": "jev", "i": 137, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "are_you_a_bot", "conf": 0.34, "latency": 0.33622312545776367, "cost": 0.000105546, "method": "jev", "i": 138, "gold": "who_do_you_work_for", "correct": false, "attempts": 1}
+{"pred": "book_flight", "conf": 1, "latency": 0.5409877300262451, "cost": 0.000105924, "method": "jev", "i": 139, "gold": "book_flight", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.87, "latency": 0.3854389190673828, "cost": 0.00010563, "method": "jev", "i": 140, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "travel_alert", "conf": 1, "latency": 0.43637728691101074, "cost": 0.000105672, "method": "jev", "i": 141, "gold": "travel_alert", "correct": true, "attempts": 1}
+{"pred": "schedule_maintenance", "conf": 0.74, "latency": 0.3957068920135498, "cost": 0.000105882, "method": "jev", "i": 142, "gold": "schedule_maintenance", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.84, "latency": 0.6305489540100098, "cost": 0.000105756, "method": "jev", "i": 143, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "insurance", "conf": 0.97, "latency": 0.4595000743865967, "cost": 0.000105714, "method": "jev", "i": 144, "gold": "insurance", "correct": true, "attempts": 11}
+{"pred": "oos", "conf": 0.74, "latency": 0.3553142547607422, "cost": 0.000105798, "method": "jev", "i": 145, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.86, "latency": 0.40613293647766113, "cost": 0.00010563, "method": "jev", "i": 146, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "todo_list_update", "conf": 0.72, "latency": 0.3984830379486084, "cost": 0.000105798, "method": "jev", "i": 147, "gold": "todo_list_update", "correct": true, "attempts": 1}
+{"pred": "balance", "conf": 0.93, "latency": 0.3153998851776123, "cost": 0.00010563, "method": "jev", "i": 148, "gold": "balance", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.99, "latency": 0.8179152011871338, "cost": 0.000105714, "method": "jev", "i": 149, "gold": "oos", "correct": true, "attempts": 11}
+{"pred": "reminder", "conf": 1, "latency": 0.3688230514526367, "cost": 0.000105798, "method": "jev", "i": 150, "gold": "reminder_update", "correct": false, "attempts": 1}
+{"pred": "pto_request", "conf": 1, "latency": 0.31253600120544434, "cost": 0.00010563, "method": "jev", "i": 151, "gold": "pto_request", "correct": true, "attempts": 1}
+{"pred": "where_are_you_from", "conf": 1, "latency": 0.3561439514160156, "cost": 0.000105588, "method": "jev", "i": 152, "gold": "where_are_you_from", "correct": true, "attempts": 1}
+{"pred": "maybe", "conf": 0.99, "latency": 0.8219518661499023, "cost": 0.000105504, "method": "jev", "i": 153, "gold": "maybe", "correct": true, "attempts": 1}
+{"pred": "meaning_of_life", "conf": 1, "latency": 0.8137269020080566, "cost": 0.000105798, "method": "jev", "i": 154, "gold": "meaning_of_life", "correct": true, "attempts": 11}
+{"pred": "credit_limit_change", "conf": 1, "latency": 0.4304509162902832, "cost": 0.000105924, "method": "jev", "i": 155, "gold": "credit_limit_change", "correct": true, "attempts": 2}
+{"pred": "definition", "conf": 1, "latency": 0.5774049758911133, "cost": 0.00010563, "method": "jev", "i": 156, "gold": "definition", "correct": true, "attempts": 1}
+{"pred": "w2", "conf": 1, "latency": 0.3983757495880127, "cost": 0.000105798, "method": "jev", "i": 157, "gold": "w2", "correct": true, "attempts": 1}
+{"pred": "cook_time", "conf": 0.99, "latency": 1.1037261486053467, "cost": 0.000105798, "method": "jev", "i": 158, "gold": "cook_time", "correct": true, "attempts": 10}
+{"pred": "alarm", "conf": 1, "latency": 0.43527698516845703, "cost": 0.000105714, "method": "jev", "i": 159, "gold": "alarm", "correct": true, "attempts": 1}
+{"pred": "who_do_you_work_for", "conf": 0.55, "latency": 0.4071359634399414, "cost": 0.000105672, "method": "jev", "i": 160, "gold": "who_made_you", "correct": false, "attempts": 1}
+{"pred": "oos", "conf": 0.99, "latency": 0.5291891098022461, "cost": 0.000105756, "method": "jev", "i": 161, "gold": "oos", "correct": true, "attempts": 1}
+{"pred": "reminder", "conf": 0.98, "latency": 0.44690370559692383, "cost": 0.000105882, "method": "jev", "i": 162, "gold": "reminder", "correct": true, "attempts": 1}
+{"pred": "order_status", "conf": 1, "latency": 0.5446279048919678, "cost": 0.000105756, "method": "jev", "i": 163, "gold": "order_status", "correct": true, "attempts": 11}
+{"pred": "damaged_card", "conf": 1, "latency": 0.39969420433044434, "cost": 0.00010605, "method": "jev", "i": 164, "gold": "damaged_card", "correct": true, "attempts": 1}
+{"pred": "change_user_name", "conf": 0.9, "latency": 0.39172911643981934, "cost": 0.00010563, "method": "jev", "i": 165, "gold": "change_user_name", "correct": true, "attempts": 1}
+{"pred": "oil_change_when", "conf": 1, "latency": 0.4182779788970947, "cost": 0.000105798, "method": "jev", "i": 166, "gold": "oil_change_when", "correct": true, "attempts": 1}
+{"pred": "repeat", "conf": 1, "latency": 0.46629810333251953, "cost": 0.000105588, "method": "jev", "i": 167, "gold": "repeat", "correct": true, "attempts": 1}
+{"pred": "reminder", "conf": 0.99, "latency": 0.5663690567016602, "cost": 0.00010584, "method": "jev", "i": 168, "gold": "reminder_update", "correct": false, "attempts": 11}
+{"pred": "recipe", "conf": 0.99, "latency": 0.3767249584197998, "cost": 0.000105798, "method": "jev", "i": 169, "gold": "recipe", "correct": true, "attempts": 1}
+{"pred": "oil_change_when", "conf": 1, "latency": 0.4877188205718994, "cost": 0.000105672, "method": "jev", "i": 170, "gold": "oil_change_when", "correct": true, "attempts": 1}
+{"pred": "make_call", "conf": 0.52, "latency": 0.46294093132019043, "cost": 0.000105504, "method": "jev", "i": 171, "gold": "oos", "correct": false, "attempts": 1}
+{"pred": "todo_list", "conf": 1, "latency": 0.39607930183410645, "cost": 0.000105798, "method": "jev", "i": 172, "gold": "todo_list", "correct": true, "attempts": 1}
+{"pred": "oos", "conf": 0.75, "latency": 0.7435610294342041, "cost": 0.000105882, "method": "jev", "i": 173, "gold": "oos", "correct": true, "attempts": 11}
+{"pred": "restaurant_reviews", "conf": 1, "latency": 0.43093204498291016, "cost": 0.000105882, "method": "jev", "i": 174, "gold": "restaurant_reviews", "correct": true, "attempts": 1}
+{"pred": "what_are_your_hobbies", "conf": 1, "latency": 0.519963264465332, "cost": 0.000105882, "method": "jev", "i": 175, "gold": "what_are_your_hobbies", "correct": true, "attempts": 1}
+{"pred": "exchange_rate", "conf": 0.96, "latency": 0.39198899269104004, "cost": 0.00010584, "method": "jev", "i": 176, "gold": "exchange_rate", "correct": true, "attempts": 1}
+{"pred": "expiration_date", "conf": 1, "latency": 0.42575526237487793, "cost": 0.000105672, "method": "jev", "i": 177, "gold": "expiration_date", "correct": true, "attempts": 1}
+{"pred": "current_location", "conf": 1, "latency": 0.6849761009216309, "cost": 0.000105588, "method": "jev", "i": 178, "gold": "share_location", "correct": false, "attempts": 11}
+{"pred": "user_name", "conf": 0.92, "latency": 0.5324211120605469, "cost": 0.000105672, "method": "jev", "i": 179, "gold": "user_name", "correct": true, "attempts": 1}
+{"pred": "current_location", "conf": 0.88, "latency": 0.363969087600708, "cost": 0.000105672, "method": "jev", "i": 180, "gold": "find_phone", "correct": false, "attempts": 1}
+{"pred": "plug_type", "conf": 1, "latency": 0.44730591773986816, "cost": 0.00010584, "method": "jev", "i": 181, "gold": "plug_type", "correct": true, "attempts": 1}
+{"pred": "weather", "conf": 1, "latency": 0.7033679485321045, "cost": 0.000105714, "method": "jev", "i": 182, "gold": "smart_home", "correct": false, "attempts": 1}
+{"pred": "restaurant_reservation", "conf": 0.9, "latency": 0.5619938373565674, "cost": 0.000105756, "method": "jev", "i": 183, "gold": "accept_reservations", "correct": false, "attempts": 11}
+{"pred": "vaccines", "conf": 1, "latency": 0.3855612277984619, "cost": 0.000105756, "method": "jev", "i": 184, "gold": "vaccines", "correct": true, "attempts": 1}
+{"pred": "change_speed", "conf": 1, "latency": 0.33887386322021484, "cost": 0.000105756, "method": "jev", "i": 185, "gold": "change_speed", "correct": true, "attempts": 1}
+{"pred": "report_lost_card", "conf": 1, "latency": 0.6988277435302734, "cost": 0.000105798, "method": "jev", "i": 186, "gold": "report_lost_card", "correct": true, "attempts": 1}
+{"pred": "who_made_you", "conf": 0.56, "latency": 0.5119180679321289, "cost": 0.00010563, "method": "jev", "i": 187, "gold": "who_made_you", "correct": true, "attempts": 1}
+{"pred": "reminder", "conf": 0.98, "latency": 0.5045876502990723, "cost": 0.000105672, "method": "jev", "i": 188, "gold": "reminder_update", "correct": false, "attempts": 11}
+{"pred": "change_ai_name", "conf": 0.98, "latency": 0.390186071395874, "cost": 0.000105672, "method": "jev", "i": 189, "gold": "change_ai_name", "correct": true, "attempts": 1}
+{"pred": "uber", "conf": 1, "latency": 0.4162759780883789, "cost": 0.000105798, "method": "jev", "i": 190, "gold": "uber", "correct": true, "attempts": 1}
+{"pred": "vaccines", "conf": 0.98, "latency": 0.36653995513916016, "cost": 0.000105672, "method": "jev", "i": 191, "gold": "oos", "correct": false, "attempts": 2}
+{"pred": "spelling", "conf": 1, "latency": 0.5905318260192871, "cost": 0.000105714, "method": "jev", "i": 192, "gold": "spelling", "correct": true, "attempts": 11}
+{"pred": "insurance", "conf": 0.95, "latency": 0.49826622009277344, "cost": 0.00010584, "method": "jev", "i": 193, "gold": "insurance_change", "correct": false, "attempts": 1}
+{"pred": "pto_used", "conf": 0.9, "latency": 0.42481184005737305, "cost": 0.00010584, "method": "jev", "i": 194, "gold": "pto_used", "correct": true, "attempts": 1}
+{"pred": "meaning_of_life", "conf": 1, "latency": 0.361558198928833, "cost": 0.000105588, "method": "jev", "i": 195, "gold": "meaning_of_life", "correct": true, "attempts": 2}
+{"pred": "weather", "conf": 1, "latency": 0.4992971420288086, "cost": 0.000105714, "method": "jev", "i": 196, "gold": "weather", "correct": true, "attempts": 11}
+{"pred": "pto_request_status", "conf": 1, "latency": 0.4599018096923828, "cost": 0.000105798, "method": "jev", "i": 197, "gold": "pto_request_status", "correct": true, "attempts": 1}
+{"pred": "improve_credit_score", "conf": 1, "latency": 0.40872693061828613, "cost": 0.000105756, "method": "jev", "i": 198, "gold": "improve_credit_score", "correct": true, "attempts": 1}
+{"pred": "repeat", "conf": 1, "latency": 0.37434983253479004, "cost": 0.00010563, "method": "jev", "i": 199, "gold": "repeat", "correct": true, "attempts": 1}
