@@ -1,0 +1,10 @@
+You are a rigorous, skeptical reviewer (NeurIPS/ICML area chair level) reviewing a PUBLIC eval report that was just revised after a previous review round. Read report/README.md (including its Erratum section), report/prereg/*, and recompute freely from report/results/*.jsonl and report/code/*. Do not modify any files.
+
+This is a SECOND round. Your job:
+1. VERIFY THE FIXES: for each of the 10 items in the Erratum, check that the corrected number/claim in the body is actually right and consistent everywhere it appears. Flag any fix that is wrong, partial, or contradicted elsewhere in the README.
+2. NEW ERRORS introduced by the revision: internal inconsistencies between Summary / Results / Latency / Erratum sections, numbers that disagree across tables, CI values that do not match what the code computes, claims about the code that the code does not do.
+3. REMAINING OVERCLAIMS or unsupported statements anywhere in the current text, including the Summary bullets and "What this means in practice".
+4. REPRODUCIBILITY: actually check that the commands in "Reproducing" work against the published layout (paths, script arguments, hardcoded directories) — report anything that would fail for an outside reader.
+5. Anything still MISSING that a skeptic would demand before trusting the headline numbers.
+
+Be specific and cite line numbers or exact values. Severity-tag each finding (blocking / major / minor). Then give a final verdict: are the current headline claims safe to leave public as written? If yes, say so plainly; do not invent problems to appear thorough.

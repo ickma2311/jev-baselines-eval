@@ -1,9 +1,12 @@
 """Analysis exactly as specified in PREREG_B1.md."""
-import json, os, numpy as np, pandas as pd
+import json, os, sys, numpy as np, pandas as pd
 _here = os.path.dirname(os.path.abspath(__file__))
-P = next(p for p in [os.path.join(_here, "..", "results", "results_b1.jsonl"), os.path.join(_here, "results_b1.jsonl")] if os.path.exists(p))
+P = sys.argv[1] if len(sys.argv) > 1 else next(   # pass a path to analyze your own rerun
+    p for p in [os.path.join(_here, "..", "results", "results_b1.jsonl"), os.path.join(_here, "results_b1.jsonl")] if os.path.exists(p))
+print(f"input: {P}")
 d = pd.DataFrame([json.loads(l) for l in open(P)])
-if "error" in d: d = d[d.error.isna()]                       # Jev rate-limit failures are retried, never scored
+if "error" in d:                                              # PREREG_B1: a final failure counts as wrong, conf 0
+    d.loc[d.error.notna(), ["correct", "conf"]] = [False, 0.0]
 d = d.drop_duplicates(["method", "i"], keep="last")
 W = d.pivot(index="i", columns="method", values="correct").astype(float)
 C = d.pivot(index="i", columns="method", values="conf").astype(float).fillna(0.0)   # failed/unparsed -> conf 0
@@ -75,3 +78,26 @@ jc = d[d.method == "jev"].cost.mean() if "cost" in d else float("nan")
 print(f"Jev mean cost/call ${jc:.6f}")
 oos = G.loc[W.index, "terra"] == "oos"
 print("oos recall:", {m: round(W.loc[oos.values, m].mean(), 3) for m in ["jev", "nano", "terra"]}, f"(n_oos={int(oos.sum())})")
+
+print("\n=== paired accuracy CIs quoted in the report ===")
+def pci(a, b, seed=0):
+    r = np.random.default_rng(seed); x = (w[a] - w[b]).values
+    bs = [r.choice(x, len(x)).mean() for _ in range(2000)]
+    return x.mean(), np.percentile(bs, 2.5), np.percentile(bs, 97.5)
+for a, b in [("jev", "nano"), ("terra", "jev")]:
+    m, lo, hi = pci(a, b); print(f"  {a}-{b}: {100*m:+.2f}pp [{100*lo:+.2f}, {100*hi:+.2f}]")
+print("\n=== margin sensitivity (report table) ===")
+for margin in [0.010, 0.005, 0.0]:
+    tgt = w.terra.mean() - margin
+    def R(f):
+        best = 1.0
+        for t in np.unique(np.concatenate([c[f].values, [0.0, 1.01]])):
+            esc = c[f] < t
+            if np.where(esc, w.terra, w[f]).mean() >= tgt - 1e-12: best = min(best, esc.mean())
+        return best
+    print(f"  margin {100*margin:.1f}pp: R_jev {R('jev'):.3f}  R_nano {R('nano'):.3f}  Δ {R('nano')-R('jev'):+.3f}")
+print("\n=== escalation/accuracy at the top thresholds (parity discussion) ===")
+for t in [1.0, 1.01]:
+    esc = c.jev < t; print(f"  t={t}: escalation {esc.mean():.3f}  acc {np.where(esc, w.terra, w.jev).mean():.3f}")
+ones = c.jev == 1.0
+print(f"  conf==1.0 items: {int(ones.sum())}; wrong {int((ones & (w.jev == 0)).sum())}; of those repairable by terra {int((ones & (w.jev == 0) & (w.terra == 1)).sum())}")

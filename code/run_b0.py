@@ -10,7 +10,8 @@ df, labels = load_sample(300)
 done = set()
 if os.path.exists(OUT):
     for line in open(OUT):
-        r = json.loads(line); done.add((r["method"], r["i"]))
+        r = json.loads(line)
+        if not r.get("error"): done.add((r["method"], r["i"]))   # failures are retried on the next run
 lock = threading.Lock()
 key = vercel_key()
 MODELS = {"nano": "openai/gpt-5.4-nano-2026-03-17", "terra": "openai/gpt-5.6-terra"}

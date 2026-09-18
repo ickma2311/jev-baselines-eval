@@ -1,11 +1,14 @@
-import json, os, numpy as np, pandas as pd
+import json, os, sys, numpy as np, pandas as pd
 _here = os.path.dirname(os.path.abspath(__file__))
-P = next(p for p in [os.path.join(_here, "..", "results", "results_b0.jsonl"), os.path.join(_here, "results_b0.jsonl")] if os.path.exists(p))
+P = sys.argv[1] if len(sys.argv) > 1 else next(   # pass a path to analyze your own rerun
+    p for p in [os.path.join(_here, "..", "results", "results_b0.jsonl"), os.path.join(_here, "results_b0.jsonl")] if os.path.exists(p))
+print(f"input: {P}")
 d = pd.DataFrame([json.loads(l) for l in open(P)]).drop_duplicates(["method", "i"], keep="last")
 rng = np.random.default_rng(0)
 
-def ci(x):
-    x = np.asarray(x, float); b = [rng.choice(x, len(x)).mean() for _ in range(2000)]
+def ci(x, seed=0):                      # fresh RNG per comparison -> deterministic, order-independent
+    r = np.random.default_rng(seed)
+    x = np.asarray(x, float); b = [r.choice(x, len(x)).mean() for _ in range(2000)]
     return x.mean(), np.percentile(b, 2.5), np.percentile(b, 97.5)
 
 def auroc(conf, correct):
@@ -52,3 +55,16 @@ print("\nfull-300 accuracy (non-Jev):", {m: round(FULL[m].mean(), 3) for m in ["
 diff = lambda a, b: ci(W[a] - W[b])
 for a, b in [("nano", "jev"), ("terra", "jev"), ("encoder", "jev")]:
     m, lo, hi = diff(a, b); print(f"paired acc diff {a}-{b}: {m:+.3f} [{lo:+.3f},{hi:+.3f}]")
+
+print("\n=== extra paired CIs quoted in the report ===")
+for a, b in [("encoder", "terra"), ("encoder", "jev"), ("terra", "jev"), ("nano", "jev")]:
+    if a in W and b in W:
+        m, lo, hi = ci(W[a] - W[b]); print(f"  {a}-{b}: {100*m:+.2f}pp [{100*lo:+.2f}, {100*hi:+.2f}]")
+print("\n=== B0 preregistered verdict (PREREG_B0.md) ===")
+k1 = (W.nano.mean() - W.jev.mean() >= -0.03) and (L.nano.median() <= 2 * L.jev.median())
+bj = cascade("jev"); bn = cascade("nano"); best = lambda c: c[c.terra_rate <= 0.5].acc.max()
+k2 = (best(bj) - best(bn)) < 0.02
+go = (best(bj) >= W.terra.mean() - 0.01) and (best(bj) - best(bn) >= 0.02)
+print(f"  K1 (nano within 3pp AND latency <=2x): {k1}  [acc diff {100*(W.nano.mean()-W.jev.mean()):+.1f}pp, latency {L.nano.median()/L.jev.median():.2f}x]")
+print(f"  K2 (jev cascade not >2pp over nano cascade): {k2}  [{100*(best(bj)-best(bn)):+.1f}pp]")
+print(f"  VERDICT: {'KILL' if (k1 and k2) else ('GO' if go else 'AMBIGUOUS')}")
