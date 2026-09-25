@@ -5,6 +5,11 @@ Independent evaluation of [TypeSafe's Jev](https://www.typesafe.ai/) (System One
 
 Not affiliated with TypeSafe. No vendor involvement, no free credits; API costs (~$1 total) paid by the author.
 
+> **This repository now holds two independent pre-registered studies.** This README is the first one
+> (intent classification). The second asks whether the confidence gate these models are deployed behind
+> survives an authority-framed prompt injection, and covers **two open-weight Jev replicas** as well as
+> Jev itself: **[`injection/`](injection/)**.
+
 > **Erratum 2026-09-18 (same day, three rounds):** the first published version overstated several results, and
 > my first round of corrections introduced a new error of its own. Three rounds of external review (GPT-6 Astra
 > via the Codex CLI; prompts and outputs in `reviews/`) found problems that I verified and corrected — the
@@ -31,6 +36,24 @@ samples and configurations:
 - Jev's confidence **did not rank its own errors better** than an LLM's verbalized confidence on CLINC150
   (AUROC 0.734 vs 0.816; paired diff CI [−0.187, +0.008], includes zero). The opposite ordering appeared on
   Banking77. Neither direction is established.
+
+## The second study: confidence under prompt injection
+
+[`injection/`](injection/) — 2026-09-22, pre-registered in two blocks, 1,200 decisions per system on
+frozen third-party items, across Jev 1.13.0, [`Mapika/decider-2b`](https://huggingface.co/Mapika/decider-2b)
+and [`com-kotobalabs/open-jev-deberta-v3-large`](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large).
+
+It tests whether, among injected tickets, confidence separates decisions that were hijacked from
+decisions that resisted. Both classes carry the injected paragraph, so it measures detection of **redirection**, not detection of
+**insertion**.
+
+**Jev's confidence ranks hijacked decisions above resisted ones** (AUROC 0.261, 95% CI [0.190, 0.336];
+the interval lies entirely below 0.5), and that survives every control tried. For the two open replicas
+the study is **inconclusive**: their marginal numbers move or hold depending on how a within-department
+control is weighted, so ticket composition remains a possible explanation. It is **not** a claim that the
+gate fails in deployment — at the frozen τ = 0.85 that gate still rejects 69% of Jev's hijacked decisions.
+
+Details, raw rows, pre-registrations and three rounds of adversarial review: [`injection/README.md`](injection/README.md).
 
 ## Why another Jev eval
 
@@ -244,7 +267,8 @@ absolute numbers are specific to a US-west-coast client.
   comparisons (`oos`, AUROC differences) are exploratory and unadjusted for multiplicity.
 - Both tasks are **single-node intent classification. Nothing here measures end-to-end agent workflows**, where
   a wrong routing decision propagates downstream and where decision latency may be a small share of total
-  latency. That remains the open question.
+  latency. That remains the open question. (The [second study](injection/) is also single-node; it changes
+  the failure mode under test, not the granularity.)
 - Jev is in early access and versioned; these numbers describe 2026-09-18 behavior through Vercel's gateway.
 - No calibration measurement (reliability diagrams / ECE), no random-routing control, no learning curve for the
   supervised baseline, no per-model prompt tuning, one scored run per item.

@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+vendor/
+data/banking77_*.csv
+data/clinc150_*.json

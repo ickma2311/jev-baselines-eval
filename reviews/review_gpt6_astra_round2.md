@@ -23,9 +23,9 @@ References below are to the current `report/README.md`.
 
 1. **[Major; newly introduced] Exact parity is reachable—the report incorrectly says otherwise.**
 
-   [README lines 93–96](/Users/chaoma/projects/research/jev_workflow/report/README.md:93) say confidence-1.0 items “can never be escalated” and Jev-first cascades “cannot reach exact Terra parity at any threshold.”
+   [README lines 93–96](../README.md:93) say confidence-1.0 items “can never be escalated” and Jev-first cascades “cannot reach exact Terra parity at any threshold.”
 
-   Both [PREREG_B1 lines 24–25](/Users/chaoma/projects/research/jev_workflow/report/prereg/PREREG_B1.md:24) and `analyze_b1.py:18` explicitly include **t = 1.01**. At that threshold, every item is escalated, and accuracy is **0.915**, exactly Terra’s accuracy.
+   Both [PREREG_B1 lines 24–25](../prereg/PREREG_B1.md:24) and `analyze_b1.py:18` explicitly include **t = 1.01**. At that threshold, every item is escalated, and accuracy is **0.915**, exactly Terra’s accuracy.
 
    The correct explanation is:
 
@@ -58,7 +58,7 @@ References below are to the current `report/README.md`.
 
 4. **[Minor; newly introduced] The encoder-versus-Jev CI disagrees with the supplied script.**
 
-   [README line 55](/Users/chaoma/projects/research/jev_workflow/report/README.md:55) now reports **+10.1pp [+5.3, +15.4]**. Running `analyze_b0.py` produces:
+   [README line 55](../README.md:55) now reports **+10.1pp [+5.3, +15.4]**. Running `analyze_b0.py` produces:
 
    ```text
    paired acc diff encoder-jev: +0.101 [+0.053,+0.149]
@@ -68,7 +68,7 @@ References below are to the current `report/README.md`.
 
 5. **[Major; remaining overclaim] The encoder’s causal explanation is still asserted without testing it.**
 
-   [README lines 126–128](/Users/chaoma/projects/research/jev_workflow/report/README.md:126) say learning dataset conventions **“is” a contributing factor**, and a zero-shot model has **“no way”** to infer them.
+   [README lines 126–128](../README.md:126) say learning dataset conventions **“is” a contributing factor**, and a zero-shot model has **“no way”** to infer them.
 
    The experiment measures an accuracy difference; it does not identify its cause. A label example does not establish how much of the advantage comes from conventions, and the impossibility claim is unsupported. Use “a possible contributor” and “may be ambiguous from label names alone.”
 

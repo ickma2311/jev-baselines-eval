@@ -37,9 +37,9 @@ Replace the README’s **“the ratio is the point”** assertion: the ratio is 
 
 The code reveals concrete asymmetries:
 
-- [Jev’s timer](/Users/chaoma/projects/research/jev_workflow/report/code/run_b1.py:24) starts after request construction and includes reading/parsing the response. Its retry loop is outside that timer.
-- [Nano’s timer](/Users/chaoma/projects/research/jev_workflow/report/code/common.py:49) includes prompt formatting and everything inside `llm.chat`, but excludes the final classification JSON parsing.
-- [The serial script](/Users/chaoma/projects/research/jev_workflow/report/code/latency_serial.py:7) creates one reusable client per model with `max_retries=2`. Internal retries are therefore potentially inside the recorded duration; Lightning documents this [retry behavior](https://lightning.ai/docs/litai/features/fallback-retry).
+- [Jev’s timer](../code/run_b1.py:24) starts after request construction and includes reading/parsing the response. Its retry loop is outside that timer.
+- [Nano’s timer](../code/common.py:49) includes prompt formatting and everything inside `llm.chat`, but excludes the final classification JSON parsing.
+- [The serial script](../code/latency_serial.py:7) creates one reusable client per model with `max_retries=2`. Internal retries are therefore potentially inside the recorded duration; Lightning documents this [retry behavior](https://lightning.ai/docs/litai/features/fallback-retry).
 - The currently installed litai implementation loads its backend in a background thread and waits for initialization inside `chat`. Thus, constructing the object outside the timer does **not** guarantee initialization is excluded. This is a first-call concern, not sufficient by itself to explain the median gap. The historical installed version is not pinned here.
 
 **Streaming is not an evident mismatch:** Jev reads the complete response, and the current litai default is `stream=False`. Both measure completion, not time to first token. Switching nano to first-token timing would answer a different question; routing requires a usable decision.
